@@ -1,0 +1,33 @@
+{
+    "githubURL": "https://github.com/gaurishhs",
+    "paypalURL": "https://paypal.com/apidev234wtf",
+    "twitterURL": "https://twitter.com/gaurishhs",
+    "instagramURL": "https://instagram.com/gaurishhs",
+    "githubSponsorsURL": "https://github.com/sponsors/gaurishhs",
+    "kofiURL": "https://ko-fi.com/gaurishhs",
+    "sourceURL": "https://github.com/gaurishhs/Portfolio",
+    "linkedinURL": "https://www.linkedin.com/in/gaurishsethia",
+    "projects": [
+        {
+            "githubURL": "https://github.com/grootmusic",
+            "title": "Groot Music",
+            "url": "https://grootmusic.pro",
+            "description": "I am a full time developer for this, This is basically a discord music bot with web dashboard using technologies such as WebSockets, EJS, Vanilla JS."
+        },
+        {
+            "githubURL": "https://github.com/gaurishhs/ButtonTickets",
+            "title": "Button Tickets",
+            "description": "A simple ticketing bot with buttons as interface"
+        },
+        {
+            "githubURL": "https://github.com/gaurishhs/SendClean",
+            "title": "SendClean",
+            "description": "This is a simple API wrapper for https://sendclean.com's email api (unofficial)"
+        },
+        {
+            "githubURL": "https://github.com/gaurishhs/DisableSafariPopupBlocker",
+            "title": "Disable Safari Popup Blocker",
+            "description": "A simple shell script to disable popup blocker in Safari"
+        }
+    ]
+}
