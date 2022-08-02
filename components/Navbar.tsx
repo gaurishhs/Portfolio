@@ -82,7 +82,7 @@ export const Nav = () => {
                     <ul className="space-y-4">
                       <li>
                         <a
-                          href="/"
+                          href="#about"
                           aria-label="About me"
                           title="About me"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -92,7 +92,7 @@ export const Nav = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#projects"
                           aria-label="About me"
                           title="About me"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -102,7 +102,7 @@ export const Nav = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#sponsor"
                           className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sponsor me"
                           title="Sponsor me"
