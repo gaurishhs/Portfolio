@@ -76,7 +76,7 @@ export const Nav = () => {
               />
             </button>
             {isMenuOpen && (
-              <div className="absolute z-[1] top-20 left-0 w-full">
+              <div data-aos="zoom-in-down" className="absolute z-[1] top-20 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <nav>
                     <ul className="space-y-4">
