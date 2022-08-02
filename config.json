@@ -28,6 +28,11 @@
             "githubURL": "https://github.com/gaurishhs/DisableSafariPopupBlocker",
             "title": "Disable Safari Popup Blocker",
             "description": "A simple shell script to disable popup blocker in Safari"
+        },
+        {
+            "title": "Mosix",
+            "description": "A music player application built with Quasar, Python and JioSaavn api",
+            "url": "https://mosix.apidev234.wtf"
         }
     ]
 }
