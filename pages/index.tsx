@@ -27,7 +27,9 @@ const Home: NextPage = () => {
     <>
       {loading ? (
         <div className="bg-black flex items-center justify-center  h-screen w-screen">
-          <img src="/logo.gif" alt="loading" />
+          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
+            <source src="/logo.webm" type="video/webm" />
+          </video>
         </div>
       ) : (
         ""

@@ -52,6 +52,7 @@ export const Nav = () => {
             <button
               className="flex flex-col h-10 w-12 rounded text-gray-200 justify-center items-center group"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="hamburger dropdown"
             >
               <div
                 className={`${genericHamburgerLine} ${

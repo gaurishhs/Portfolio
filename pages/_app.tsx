@@ -17,9 +17,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   })
   return (
-    <><Head>
+    <>
+    <Head>
       {page ? <title>{page} | Gaurish Sethia</title> : <title>Gaurish Sethia</title>}
-    </Head><Component {...pageProps} /></>
+      <meta name="description" content='Gaurish Sethia is a full stack developer specializing in building production-ready web apps.' />
+    </Head>
+    <Component {...pageProps} /></>
   )
 }
 

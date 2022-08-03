@@ -47,6 +47,7 @@ export default function Footer() {
                   className="text-white transition hover:text-white/75"
                   href={config.twitterURL}
                   target={"_blank"}
+                  aria-label="twitter link"
                 >
                   <FaTwitter size={25} />
                 </a>
@@ -57,6 +58,7 @@ export default function Footer() {
                   className="text-white transition hover:text-white/75"
                   href={config.githubURL}
                   target={"_blank"}
+                  aria-label="github link"
                 >
                   <FaGithub size={25} />
                 </a>
@@ -67,6 +69,7 @@ export default function Footer() {
                   className="text-white transition hover:text-white/75"
                   href={config.linkedinURL}
                   target={"_blank"}
+                  aria-label="linkedin link"
                 >
                   <FaLinkedin size={25} />
                 </a>
@@ -77,6 +80,7 @@ export default function Footer() {
                   className="text-white transition hover:text-white/75"
                   href={config.instagramURL}
                   target={"_blank"}
+                  aria-label="instagram link"
                 >
                   <FaInstagram size={25} />
                 </a>

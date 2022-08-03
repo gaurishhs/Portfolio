@@ -9,7 +9,7 @@ export const AboutMe = () => {
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-emerald-400 sm:text-4xl sm:leading-none">
               <span className="relative px-1">
                 <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
-                <span className="relative inline-block text-deep-purple-accent-400">
+                <span className="relative inline-block text-heading">
                   About Me
                 </span>
               </span>
@@ -142,6 +142,8 @@ export const AboutMe = () => {
           <img
             src="/me.jpeg"
             alt="me"
+            width={256}
+            height={296}
           />
         </div>
       </div>

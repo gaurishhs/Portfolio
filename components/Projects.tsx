@@ -9,7 +9,7 @@ export const Projects = () => {
       <h2 className="mb-6 font-sans text-center text-3xl font-bold tracking-tight text-emerald-400 sm:text-4xl sm:leading-none">
         <span className="relative px-1">
           <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
-          <span className="relative inline-block text-deep-purple-accent-400">
+          <span className="relative inline-block text-heading">
             Projects
           </span>
         </span>
