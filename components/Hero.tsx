@@ -1,4 +1,3 @@
-import Typewriter from "typewriter-effect";
 
 export const Hero = () => {
   return (
@@ -9,15 +8,12 @@ export const Hero = () => {
             <h1 className="max-w-lg mb-6 text-sea-green-crayola font-sans text-6xl font-bold tracking-tight sm:leading-none">
               Hey, I am Gaurish Sethia.
             </h1>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString(
-                    "I am a Full Stack Web Developer, I work mostly with Javascript/Typescript and Golang. I use Web technologies such as React(Next.js), Vue(Quasar, Nuxt.js, VuePress, Vuetify). I have 3 years of experience in web development."
-                  )
-                  .start();
-              }}
-            />
+            <p>
+              I am a Full Stack Web Developer, I work mostly with
+              Javascript/Typescript and Golang. I use Web technologies such as
+              React(Next.js), Vue(Quasar, Nuxt.js, VuePress, Vuetify). I have 3
+              years of experience in web development.
+            </p>
           </div>
         </div>
       </div>
