@@ -74,17 +74,6 @@ export default function Footer() {
                   <FaLinkedin size={25} />
                 </a>
               </li>
-
-              <li>
-                <a
-                  className="text-white transition hover:text-white/75"
-                  href={config.instagramURL}
-                  target={"_blank"}
-                  aria-label="instagram link"
-                >
-                  <FaInstagram size={25} />
-                </a>
-              </li>
             </ul>
           </div>
 
