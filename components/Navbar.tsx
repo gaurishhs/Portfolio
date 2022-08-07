@@ -3,6 +3,12 @@ import Logo from "./Logo";
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  function ScrollTo(id: string) {
+    document.getElementById(id)?.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth'
+    })
+  }
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full hover:bg-gray-200 bg-gray-50 transition ease transform duration-300`;
   return (
     <div className="bg-transparent ease-out">
@@ -17,35 +23,32 @@ export const Nav = () => {
             <Logo className="logo" />
           </a>
           <ul className="items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="#about"
+            <li onClick={() => ScrollTo('about')}>
+              <span
                 aria-label="About me"
                 title="About me"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 About Me
-              </a>
+              </span>
             </li>
-            <li>
-              <a
-                href="#projects"
+            <li onClick={() => ScrollTo('projects')}>
+              <span
                 aria-label="About me"
                 title="About me"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Projects
-              </a>
+              </span>
             </li>
-            <li>
-              <a
-                href="#sponsor"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+            <li onClick={() => ScrollTo('sponsor')}>
+              <span
+                className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sponsor me"
                 title="Sponsor me"
               >
                 Sponsor
-              </a>
+              </span>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -81,35 +84,32 @@ export const Nav = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <nav>
                     <ul className="space-y-4">
-                      <li>
-                        <a
-                          href="#about"
+                      <li onClick={() => ScrollTo('about')}>
+                        <span
                           aria-label="About me"
                           title="About me"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About Me
-                        </a>
+                        </span>
                       </li>
-                      <li>
-                        <a
-                          href="#projects"
+                      <li onClick={() => ScrollTo('projects')}>
+                        <span
                           aria-label="About me"
                           title="About me"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Projects
-                        </a>
+                        </span>
                       </li>
-                      <li>
-                        <a
-                          href="#sponsor"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      <li onClick={() => ScrollTo('sponsor')}>
+                        <span
+                          className="inline-flex cursor-pointer items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sponsor me"
                           title="Sponsor me"
                         >
                           Sponsor Me
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </nav>
