@@ -24,7 +24,7 @@ export default function Footer() {
               >
                 <img
                   className="rounded-full"
-                  src="https://cdn.statically.io/img/apidev234.wtf/me.jpeg"
+                  src="/me.jpeg"
                   alt="me"
                   width={40}
                   height={50}
