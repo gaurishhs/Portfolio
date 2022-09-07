@@ -31,7 +31,8 @@ export default function Footer() {
                 />
                 <span className="ml-3 text-xl">Gaurish</span>
               </a>
-              <p className="text-sm inline-flex text-gray-400 sm:ml-4 sm:pl-3 sm:py-2 sm:mt-0 mt-4">
+              &emsp;
+              <p className="text-sm inline-flex text-gray-400 sm:ml-7 sm:pl-3 md:ml-5 lg:ml-7 sm:py-2 sm:mt-0 mt-4">
                 <Link href={"mailto:gaurishsethia@yahoo.com"}>gaurishsethia@yahoo.com</Link>
               </p>
               <p className="text-sm inline-flex text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
