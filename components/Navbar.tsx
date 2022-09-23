@@ -5,9 +5,9 @@ export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   function ScrollTo(id: string) {
     document.getElementById(id)?.scrollIntoView({
-      block: 'start',
-      behavior: 'smooth'
-    })
+      block: "start",
+      behavior: "smooth",
+    });
   }
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full hover:bg-gray-200 bg-gray-50 transition ease transform duration-300`;
   return (
@@ -23,7 +23,7 @@ export const Nav = () => {
             <Logo className="logo" />
           </a>
           <ul className="items-center hidden space-x-8 lg:flex">
-            <li onClick={() => ScrollTo('about')}>
+            <li onClick={() => ScrollTo("about")}>
               <span
                 aria-label="About me"
                 title="About me"
@@ -32,7 +32,7 @@ export const Nav = () => {
                 About Me
               </span>
             </li>
-            <li onClick={() => ScrollTo('projects')}>
+            <li onClick={() => ScrollTo("projects")}>
               <span
                 aria-label="About me"
                 title="About me"
@@ -41,14 +41,17 @@ export const Nav = () => {
                 Projects
               </span>
             </li>
-            <li onClick={() => ScrollTo('sponsor')}>
-              <span
+            <li onClick={() => ScrollTo("sponsor")}>
+              {/* <span
                 className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sponsor me"
                 title="Sponsor me"
               >
                 Sponsor
-              </span>
+              </span> */}
+              <button className="inline-flex border-2 hover:bg-slate-50 transition ease-in-out hover:text-black items-center justify-center h-12 px-6 tracking-wide text-white">
+                Sponsor me
+              </button>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -80,11 +83,14 @@ export const Nav = () => {
               />
             </button>
             {isMenuOpen && (
-              <div data-aos="zoom-in-down" className="absolute z-[1] top-20 left-0 w-full">
+              <div
+                data-aos="zoom-in-down"
+                className="absolute z-[1] top-20 left-0 w-full"
+              >
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <nav>
                     <ul className="space-y-4">
-                      <li onClick={() => ScrollTo('about')}>
+                      <li onClick={() => ScrollTo("about")}>
                         <span
                           aria-label="About me"
                           title="About me"
@@ -93,7 +99,7 @@ export const Nav = () => {
                           About Me
                         </span>
                       </li>
-                      <li onClick={() => ScrollTo('projects')}>
+                      <li onClick={() => ScrollTo("projects")}>
                         <span
                           aria-label="About me"
                           title="About me"
@@ -102,14 +108,10 @@ export const Nav = () => {
                           Projects
                         </span>
                       </li>
-                      <li onClick={() => ScrollTo('sponsor')}>
-                        <span
-                          className="inline-flex cursor-pointer items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sponsor me"
-                          title="Sponsor me"
-                        >
-                          Sponsor Me
-                        </span>
+                      <li onClick={() => ScrollTo("sponsor")}>
+                        <button className="inline-flex border-2 transition ease-in-out bg-black items-center justify-center h-12 px-6 tracking-wide text-white">
+                          Sponsor me
+                        </button>
                       </li>
                     </ul>
                   </nav>

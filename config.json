@@ -9,9 +9,9 @@
     "projects": [
         {
             "githubURL": "https://github.com/grootmusic",
-            "title": "Groot Music",
+            "title": "Groot Music (Discontinued)",
             "url": "https://grootbot.pro",
-            "description": "I am a full time developer for this, This is basically a discord music bot with web dashboard using technologies such as WebSockets, EJS, Vanilla JS."
+            "description": "I was a full time developer for this, This was basically a discord music bot with web dashboard using technologies such as WebSockets, EJS, Vanilla JS."
         },
         {
             "githubURL": "https://github.com/gaurishhs/ButtonTickets",
@@ -32,6 +32,11 @@
             "title": "Mosix",
             "description": "A music player application built with Quasar, Python and JioSaavn api",
             "url": "https://mosix.gaurishsethia.me"
+        },
+        {
+            "title": "Boilers",
+            "description": "An open-source project which helps beginners start with new frameworks easily.",
+            "githubURL": "https://github.com/gaurishhs/boilers"
         }
     ]
 }
