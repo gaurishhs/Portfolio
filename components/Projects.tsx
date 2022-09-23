@@ -1,5 +1,5 @@
 import { useState } from "react";
-import * as config from "../config.json";
+import config from "../config.json";
 import { Project } from "./Project";
 import { AiOutlineArrowDown } from "react-icons/ai";
 export const Projects = () => {
