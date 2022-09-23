@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Gaurish Sethia is a full stack developer specializing in building production-ready web apps."
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://gaurishsethia.me/banner.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://gaurishsethia.me/" />
         <meta property="twitter:title" content="Hey, I am Gaurish Sethia." />
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="twitter:description"
           content="Gaurish Sethia is a full stack developer specializing in building production-ready web apps."
         />
-        <meta property="twitter:image" content=""></meta>
+        <meta property="twitter:image" content="https://gaurishsethia.me/banner.png"></meta>
       </Head>
       <Component {...pageProps} />
     </>
