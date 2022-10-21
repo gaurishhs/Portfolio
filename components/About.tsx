@@ -17,7 +17,7 @@ export const AboutMe = () => {
             <p className="text-base text-opacity-50 nunito text-gray-200 md:text-lg">
               I started my coding journey back in 2019, midst of the Novel
               Coronavirus pandemic as i was totally bored and exploring new
-              opportunities of what I was capable of.
+              opportunities as to what I was capable of.
             </p>
           </div>
           <p className="mb-4 text-sm nunito text-opacity-50 text-gray-200 tracking-widest">

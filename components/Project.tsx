@@ -2,6 +2,7 @@ import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import { AiOutlineFolder } from "react-icons/ai";
+
 interface Props {
   title: string;
   description: string;

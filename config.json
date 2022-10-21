@@ -9,9 +9,9 @@
     "projects": [
         {
             "githubURL": "https://github.com/grootmusic",
-            "title": "Groot Music (Discontinued)",
+            "title": "Groot Music",
             "url": "https://grootbot.pro",
-            "description": "I was a full time developer for this, This was basically a discord music bot with web dashboard using technologies such as WebSockets, EJS, Vanilla JS."
+            "description": "I am a full time developer for this, This was basically a discord music bot with web dashboard using technologies such as WebSockets, EJS, Vanilla JS."
         },
         {
             "githubURL": "https://github.com/gaurishhs/ButtonTickets",
@@ -37,6 +37,168 @@
             "title": "Boilers",
             "description": "An open-source project which helps beginners start with new frameworks easily.",
             "githubURL": "https://github.com/gaurishhs/boilers"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Languages",
+            "skills": [
+                {
+                    "name": "Node.JS(JavaScript & Typescript)",
+                    "image": "https://img.icons8.com/fluency/48/000000/node-js.png",
+                    "progress": "99%"
+                },
+                {
+                    "name": "Golang",
+                    "image": "https://img.icons8.com/color/48/000000/golang.png",
+                    "progress": "45%"
+                },
+                {
+                    "name": "Python",
+                    "image": "https://img.icons8.com/color/48/000000/python.png",
+                    "progress": "45%"
+                }
+            ]
+        },
+        {
+            "category": "Frameworks",
+            "skills": [
+                {
+                    "name": "Express",
+                    "image": "https://img.icons8.com/ios/50/000000/express-js.png",
+                    "progress": "100%"
+                },
+                {
+                    "name": "Fastify",
+                    "image": "https://www.fastify.io/images/android-icon-192x192.37eb7f1ae3853740.png",
+                    "progress": "75%"
+                },
+                {
+                    "name": "NestJS",
+                    "image": "https://img.icons8.com/color/48/000000/nestjs.png",
+                    "progress": "55%"
+                },
+                {
+                    "name": "Nuxt.js",
+                    "image": "https://nuxtjs.org/design-kit/colored-logo.png",
+                    "progress": "50%"
+                },
+                {
+                    "name": "React/Next.js",
+                    "image": "https://img.icons8.com/color/48/000000/nextjs.png",
+                    "progress": "99%"
+                },
+                {
+                    "name": "ElectronJS",
+                    "image": "/electron.png",
+                    "progress": "80%"
+                },
+                {
+                    "name": "Tauri",
+                    "image": "https://tauri.app//meta/favicon-96x96.png",
+                    "progress": "35%"
+                },
+                {
+                    "name": "TailwindCSS",
+                    "image": "https://img.icons8.com/color/48/000000/tailwindcss.png",
+                    "progress": "99%"
+                },
+                {
+                    "name": "Vuetify",
+                    "image": "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light.svg",
+                    "progress": "45%"
+                },
+                {
+                    "name": "FastAPI",
+                    "image": "https://fastapi.tiangolo.com/img/icon-white.svg",
+                    "progress": "45%"
+                }
+            ]
+        },
+        {
+            "category": "Backend as a Service",
+            "skills": [
+                {
+                    "name": "Firebase",
+                    "image": "https://img.icons8.com/color/48/000000/firebase.png",
+                    "progress": "95%"
+                },
+                {
+                    "name": "Supabase",
+                    "image": "https://pbs.twimg.com/profile_images/1397471927132844033/jN-wuufb_400x400.jpg",
+                    "progress": "65%"
+                }
+            ]
+        },
+        {
+            "category": "Deployments",
+            "skills": [
+                {
+                    "name": "Digital Ocean",
+                    "image": "https://www.digitalocean.com/_next/static/media/android-chrome-512x512.5f2e6221.png",
+                    "progress": "50%"
+                },
+                {
+                    "name": "Amazon AWS",
+                    "image": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+                    "progress": "20%"
+                },
+                {
+                    "name": "Vercel",
+                    "image": "/vercel.svg",
+                    "progress": "100%"
+                },
+                {
+                    "name": "Netlify",
+                    "image": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo.png",
+                    "progress": "75%"
+                },
+                {
+                    "name": "Cloudflare Pages & Workers",
+                    "image": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-shadow-tal-revivo.png",
+                    "progress": "75%"
+                },
+                {
+                    "name": "Wordpress",
+                    "image": "https://img.icons8.com/color/48/000000/wordpress.png",
+                    "progress": "35%"
+                }
+            ]
+        },
+        {
+            "category": "Databases",
+            "skills": [
+                {
+                    "name": "MongoDB",
+                    "image": "https://img.icons8.com/color/48/000000/mongodb.png",
+                    "progress": "75%"
+                },
+                {
+                    "name": "MySQL",
+                    "image": "https://img.icons8.com/color/48/000000/mysql-logo.png",
+                    "progress": "40%"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "image": "https://img.icons8.com/color/48/000000/postgreesql.png",
+                    "progress": "75%"
+                },
+                {
+                    "name": "Redis",
+                    "image": "https://img.icons8.com/color/48/000000/redis.png",
+                    "progress": "99%"
+                },
+                {
+                    "name": "Apache Cassandra",
+                    "progress":"15%",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/200px-Cassandra_logo.svg.png"
+                },
+                {
+                    "name": "SQLite",
+                    "image": "/sqlite.gif",
+                    "progress": "50%"
+                }
+            ]
         }
     ]
 }

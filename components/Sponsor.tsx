@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 export default function Donate() {
   const router = useRouter();
   return (
-    <div id="sponsor" className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
+    <div id="sponsor" className="relative max-w-2xl mb-7 sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
       <h2 className="text-center mb-6 font-sans text-3xl font-bold tracking-tight text-emerald-400 sm:text-4xl sm:leading-none">
         <span className="relative px-1">
           <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />

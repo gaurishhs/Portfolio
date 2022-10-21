@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
-import { Nav } from "../components/Navbar";
-import { Hero } from "../components/Hero";
+import { Nav } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
 import { useRouter } from "next/router";
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
-import { AboutMe } from "../components/About";
-import { Projects } from "../components/Projects";
-import Donate from "../components/Sponsor";
-import axios from "axios";
+import Footer from "@/components/Footer";
+import Layout from "@/components/Layout";
+import { AboutMe } from "@/components/About";
+import { Projects } from "@/components/Projects";
+import Donate from "@/components/Sponsor";
+
 const Home: NextPage = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
@@ -37,20 +37,9 @@ const Home: NextPage = () => {
       <>
         <Layout>
           <Hero />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <AboutMe />
           <Projects />
           <Donate />
-          <br />
-          <br />
-          <Footer />
         </Layout>
       </>
     </>

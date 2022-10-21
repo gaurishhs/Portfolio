@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import Logo from "./Logo";
 
@@ -23,35 +24,45 @@ export const Nav = () => {
             <Logo className="logo" />
           </a>
           <ul className="items-center hidden space-x-8 lg:flex">
-            <li onClick={() => ScrollTo("about")}>
-              <span
-                aria-label="About me"
-                title="About me"
-                className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                About Me
-              </span>
+            <li>
+              <Link href="/#about">
+                <span
+                  aria-label="About me"
+                  title="About me"
+                  className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  About Me
+                </span>
+              </Link>
             </li>
-            <li onClick={() => ScrollTo("projects")}>
-              <span
-                aria-label="About me"
-                title="About me"
-                className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Projects
-              </span>
+            <li>
+              <Link href="/skills">
+                <span
+                  aria-label="Skills"
+                  title="Skills"
+                  className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Skills
+                </span>
+              </Link>
             </li>
-            <li onClick={() => ScrollTo("sponsor")}>
-              {/* <span
-                className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sponsor me"
-                title="Sponsor me"
-              >
-                Sponsor
-              </span> */}
-              <button className="inline-flex border-2 hover:bg-slate-50 transition ease-in-out hover:text-black items-center justify-center h-12 px-6 tracking-wide text-white">
-                Sponsor me
-              </button>
+            <li>
+              <Link href="/#projects">
+                <span
+                  aria-label="About me"
+                  title="About me"
+                  className="font-medium cursor-pointer tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Projects
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#sponsor">
+                <button className="inline-flex border-2 hover:bg-slate-50 transition duration-300 ease-in-out hover:text-black items-center justify-center h-12 px-6 tracking-wide text-white">
+                  Sponsor me
+                </button>
+              </Link>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -90,28 +101,45 @@ export const Nav = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <nav>
                     <ul className="space-y-4">
-                      <li onClick={() => ScrollTo("about")}>
-                        <span
-                          aria-label="About me"
-                          title="About me"
-                          className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          About Me
-                        </span>
+                      <li>
+                        <Link href="/#about">
+                          <span
+                            aria-label="About me"
+                            title="About me"
+                            className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            About Me
+                          </span>
+                        </Link>
                       </li>
-                      <li onClick={() => ScrollTo("projects")}>
-                        <span
-                          aria-label="About me"
-                          title="About me"
-                          className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Projects
-                        </span>
+                      <li>
+                        <Link href="/skills">
+                          <span
+                            aria-label="About me"
+                            title="About me"
+                            className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Skills
+                          </span>
+                        </Link>
                       </li>
-                      <li onClick={() => ScrollTo("sponsor")}>
-                        <button className="inline-flex border-2 transition ease-in-out bg-black items-center justify-center h-12 px-6 tracking-wide text-white">
-                          Sponsor me
-                        </button>
+                      <li>
+                        <Link href="/#projects">
+                          <span
+                            aria-label="About me"
+                            title="About me"
+                            className="font-medium cursor-pointer tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Projects
+                          </span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#sponsor">
+                          <button className="inline-flex border-2 transition ease-in-out duration-300 bg-black items-center justify-center h-12 px-6 tracking-wide text-white">
+                            Sponsor me
+                          </button>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

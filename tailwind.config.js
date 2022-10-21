@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+        sans: ['Pacaembu', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         red: {

@@ -1,4 +1,5 @@
 import { Nav } from "../components/Navbar";
+import Footer from "./Footer";
 
 export default function Layout({ children }: any) {
     return (
@@ -7,6 +8,7 @@ export default function Layout({ children }: any) {
             <div className="px-4 py-16 max-h-full">
                 {children}
             </div>
+            <Footer />
         </>
     )
 }
