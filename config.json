@@ -1,0 +1,228 @@
+{
+    "navLinks": [
+        {
+            "title": "Blog",
+            "href": "/blog"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        }
+    ],
+    "descriptionStrings": [
+        "I love to code.",
+        "I was born and live in Faridabad, India.",
+        "I love to learn and create new things.",
+        "I love to read books.",
+        "I love to play video games.",
+        "I love to play basketball and badminton.",
+        "I love listening to the songs of XXXTENTACION, Anuv Jain and Arjit Singh.",
+        "I love to travel to new places."
+    ],
+    "email": "gaurishsethia@yahoo.com",
+    "github": "https://github.com/gaurishhs",
+    "linkedIn": "https://www.linkedin.com/in/gaurishsethia/",
+    "twitter": "https://twitter.com/gaurishhs",
+    "sourceURL": "https://github.com/gaurishhs/Portfolio",
+    "siteURL": "https://gaurishsethia.me",
+    "githubSponsorURL": "https://github.com/sponsors/gaurishhs",
+    "projects": [
+        {
+            "githubURL": "https://github.com/grootmusic",
+            "title": "Groot Music",
+            "url": "https://grootbot.pro",
+            "description": "I am a full time developer for this, This is basically a discord music bot with web dashboard using technologies such as Next.js, NextAuth.js, Node.js, Typescript, Redis and Express."
+        },
+        {
+            "githubURL": "https://github.com/gaurishhs/ButtonTickets",
+            "title": "Button Tickets",
+            "description": "A simple discord ticketing bot with buttons as interface"
+        },
+        {
+            "githubURL": "https://github.com/gaurishhs/SendClean",
+            "title": "SendClean",
+            "description": "A strongly typed api wrapper for https://sendclean.com with support for both node and browser. Uses in-built https module."
+        },
+        {
+            "githubURL": "https://github.com/gaurishhs/DisableSafariPopupBlocker",
+            "title": "Disable Safari Popup Blocker",
+            "description": "A simple shell script to disable popup blocker in Safari"
+        },
+        {
+            "title": "Mosix",
+            "description": "A music player application built with Quasar, Python and JioSaavn api",
+            "url": "https://mosix.gaurishsethia.me"
+        },
+        {
+            "title": "Boilers",
+            "description": "An open-source project which helps beginners start with new frameworks easily.",
+            "githubURL": "https://github.com/gaurishhs/boilers"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Languages",
+            "skills": [
+                {
+                    "name": "Javascript",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                    "progress": "99%"
+                },
+                {
+                    "name": "Golang",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+                    "progress": "45%"
+                },
+                {
+                    "name": "Python",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                    "progress": "45%"
+                }
+            ]
+        },
+        {
+            "category": "Frameworks",
+            "skills": [
+                {
+                    "name": "Express",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+                    "progress": "100%"
+                },
+                {
+                    "name": "Fastify",
+                    "image": "https://www.fastify.io/images/android-icon-192x192.37eb7f1ae3853740.png",
+                    "progress": "75%"
+                },
+                {
+                    "name": "NestJS",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
+                    "progress": "55%"
+                },
+                {
+                    "name": "Nuxt.js",
+                    "image": "https://nuxtjs.org/design-kit/colored-logo.png",
+                    "progress": "50%"
+                },
+                {
+                    "name": "Next.js",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+                    "progress": "80%"
+                },
+                {
+                    "name": "ElectronJS",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
+                    "progress": "80%"
+                },
+                {
+                    "name": "Tauri",
+                    "image": "https://tauri.app//meta/favicon-96x96.png",
+                    "progress": "35%"
+                },
+                {
+                    "name": "Tailwind",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+                    "progress": "99%"
+                },
+                {
+                    "name": "Vuetify",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg",
+                    "progress": "45%"
+                },
+                {
+                    "name": "FastAPI",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+                    "progress": "45%"
+                }
+            ]
+        },
+        {
+            "category": "Backend as a Service",
+            "skills": [
+                {
+                    "name": "Firebase",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+                    "progress": "95%"
+                },
+                {
+                    "name": "Supabase",
+                    "image": "/assets/supabase.svg",
+                    "progress": "65%"
+                }
+            ]
+        },
+        {
+            "category": "Deployments",
+            "skills": [
+                {
+                    "name": "Digital Ocean",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
+                    "progress": "50%"
+                },
+                {
+                    "name": "Amazon AWS",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+                    "progress": "20%"
+                },
+                {
+                    "name": "Vercel",
+                    "image": "/assets/vercel.svg",
+                    "progress": "100%"
+                },
+                {
+                    "name": "Netlify",
+                    "image": "/assets/netlify.svg",
+                    "progress": "75%"
+                },
+                {
+                    "name": "Cloudflare Pages & Workers",
+                    "image": "/assets/cloudflare.svg",
+                    "progress": "75%"
+                },
+                {
+                    "name": "Wordpress",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+                    "progress": "35%"
+                }
+            ]
+        },
+        {
+            "category": "Databases",
+            "skills": [
+                {
+                    "name": "MongoDB",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+                    "progress": "75%"
+                },
+                {
+                    "name": "MySQL",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+                    "progress": "40%"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+                    "progress": "75%"
+                },
+                {
+                    "name": "Redis",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+                    "progress": "99%"
+                },
+                {
+                    "name": "Apache Cassandra",
+                    "progress": "15%",
+                    "image": "/assets/cassandra.svg"
+                },
+                {
+                    "name": "SQLite",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+                    "progress": "50%"
+                }
+            ]
+        }
+    ]
+}
