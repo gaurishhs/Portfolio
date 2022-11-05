@@ -38,6 +38,12 @@
             "description": "I am a full time developer for this, This is basically a discord music bot with web dashboard using technologies such as Next.js, NextAuth.js, Node.js, Typescript, Redis and Express."
         },
         {
+            "githubURL": "https://github.com/gaurishhs/utdocs",
+            "title": "UTDocs",
+            "url": "gaurishhs.github.io/utdocs/build/",
+            "description": "Simple minimalistic Documentation Generator. Made with Golang, TailwindCSS, Alpine.js"
+        },
+        {
             "githubURL": "https://github.com/gaurishhs/ButtonTickets",
             "title": "Button Tickets",
             "description": "A simple discord ticketing bot with buttons as interface"
