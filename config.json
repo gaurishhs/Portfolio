@@ -40,7 +40,7 @@
         {
             "githubURL": "https://github.com/gaurishhs/utdocs",
             "title": "UTDocs",
-            "url": "gaurishhs.github.io/utdocs/build/",
+            "url": "https://gaurishhs.github.io/utdocs/build/",
             "description": "Simple minimalistic Documentation Generator. Made with Golang, TailwindCSS, Alpine.js"
         },
         {
