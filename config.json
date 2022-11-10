@@ -79,9 +79,14 @@
                     "progress": "99%"
                 },
                 {
+                    "name": "Typescript",
+                    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+                    "progress": "90%"
+                },
+                {
                     "name": "Golang",
                     "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
-                    "progress": "45%"
+                    "progress": "50%"
                 },
                 {
                     "name": "Python",
