@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="flex flex-wrap justify-center gap-1 lg:justify-end md:gap-8 lg:gap-3">
               <li>
                 <a
-                  className="text-white transition hover:text-white/75"
+                  className="text-white transition hover:text-green-400"
                   href={config.twitter}
                   target={"_blank"}
                   aria-label="twitter link"
@@ -55,7 +55,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  className="text-white transition hover:text-white/75"
+                  className="text-white transition hover:text-green-400"
                   href={config.github}
                   target={"_blank"}
                   aria-label="github link"
@@ -66,7 +66,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  className="text-white transition hover:text-white/75"
+                  className="text-white transition hover:text-green-400"
                   href={config.linkedIn}
                   target={"_blank"}
                   aria-label="linkedin link"
