@@ -67,6 +67,12 @@
             "title": "Boilers",
             "description": "An open-source project which helps beginners start with new frameworks easily.",
             "githubURL": "https://github.com/gaurishhs/boilers"
+        },
+        {
+            "title": "Discord Webhooks Node",
+            "description": "Easily send messages via discord webhooks using this package.",
+            "githubURL": "https://github.com/gaurishhs/discord-webhooks-node",
+            "url": "https://npmjs.com/package/discord-webhooks-node"
         }
     ],
     "skills": [

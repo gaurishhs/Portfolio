@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-4 text-sm text-center text-gray-400 lg:text-right lg:mt-0">
-            &copy; Copyright {new Date().getFullYear()} Gaurish. All Rights
+            &copy; Copyright {new Date().getFullYear()} Gaurish Sethia. All Rights
             Reserved.
           </p>
         </div>
