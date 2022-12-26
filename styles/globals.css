@@ -16,14 +16,14 @@
 }
 
 body {
-  background-color: rgb(33, 39, 47);
+  @apply bg-zinc-900
 }
 
 .nav-link {
   font-weight: 550;
   font-size: 16px;
   line-height: 20px;
-  @apply rounded ease-in-out duration-200 py-1 px-2 sm:py-2 sm:px-3 text-gray-100 hover:bg-gray-700;
+  @apply rounded ease-in-out duration-200 py-1 px-2 sm:py-2 sm:px-3 text-gray-100 hover:bg-white/[2.5];
 }
 
 .link {
@@ -58,10 +58,10 @@ body {
          conic-gradient(#0000 30%,#4ac477);
   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
   mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
-  animation: spinner-c7wet2 1s infinite linear;
+  animation: spinner 1s infinite linear;
 }
 
-@keyframes spinner-c7wet2 {
+@keyframes spinner {
   100% {
      transform: rotate(1turn);
   }

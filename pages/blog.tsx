@@ -7,7 +7,8 @@ interface Props {
 }
 
 export default function Blog(props: Props) {
-  let description = "I mainly write my blog posts on dev.to. You can find all my blog posts here.";
+  let description =
+    "I mainly write my blog posts on dev.to. You can find all my blog posts here.";
   return (
     <>
       <SEO title="Blog - Gaurish Sethia" description={description} />

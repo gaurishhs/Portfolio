@@ -21,18 +21,6 @@ export default function Hero() {
             <h2 className="font-sans font-medium tracking-tight text-neutral-200 sm:leading-none max-w-lg mb-6">
               I'm <b>Gaurish Sethia</b> - A self-taught full stack developer and a student.
             </h2>
-              <Typewriter
-                options={{
-                  strings: config.descriptionStrings,
-                  autoStart: true,
-                  delay: 50,
-                  deleteSpeed: 0,
-                  loop: true,
-                  wrapperClassName: 'text-neutral-200 text-base',
-                  cursorClassName: 'text-neutral-200 animate-pulse',
-                }}
-              />
-
             <div className="text-base mt-3 text-neutral-400 md:text-lg">
               I started my coding journey back in 2019, midst of the Novel
               Coronavirus pandemic as i was totally bored and exploring new
