@@ -6,15 +6,16 @@ import {
   MdOutlineLocationOn,
   MdMailOutline,
 } from "react-icons/md";
+import Image from "next/image";
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
 import Link from "next/link";
 
 export function ProfileCard(spotifyData: SpotifyNowPlayingData) {
   return (
     <div className="overflow-hidden shadow-emerald-700/50 max-w-md rounded-lg shadow scale-100 xl:hover:scale-[1.10] z-10 hover:z-30 transition-all duration-200 ease-out">
-      <img
+      <Image
         alt="Profile Picture"
-        src="/assets/me.jpeg"
+        src="/me.jpeg"
         width={330}
         height={200}
         className="object-cover"

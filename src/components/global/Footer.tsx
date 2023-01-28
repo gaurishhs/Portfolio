@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import Image from "next/image";
 import { Link } from "./Link";
 
 export default function Footer() {
@@ -20,9 +21,9 @@ export default function Footer() {
                 aria-current="page"
                 className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
               >
-                <img
+                <Image
                   className="rounded-full"
-                  src="/assets/me.jpeg"
+                  src="/me.jpeg"
                   alt="me"
                   width={40}
                   height={50}

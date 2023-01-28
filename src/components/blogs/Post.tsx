@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { BlogPost } from "types";
+import Image from "next/image";
 import { AiOutlineCalendar, AiOutlineHeart } from "react-icons/ai";
 
 export default function Post(post: BlogPost) {
   return (
     <div className="p-4 lg:w-1/2 md:w-1/2">
       <div className="h-full border-2 ease-in-out duration-200 transition-all border-gray-500 hover:border-gray-300 rounded-lg overflow-hidden">
-        <img
+        <Image
           className="lg:h-48 md:h-36 w-full object-cover object-center"
           src={post.cover_image}
           alt="blog"

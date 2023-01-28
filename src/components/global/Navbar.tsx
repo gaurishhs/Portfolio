@@ -1,7 +1,6 @@
 import Link from "next/link";
 import config from "@/config.json";
-import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import Image from "next/image";
 
 interface Props {
   isOpen: boolean;
@@ -15,8 +14,8 @@ export default function Navbar(props: Props) {
         <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins]">
           <div className="text-3xl mr-1 pt-2">
             <Link href="/">
-              <img
-                src="/assets/me.jpeg"
+              <Image
+                src="/me.jpeg"
                 alt="logo"
                 className="rounded-full"
                 width={50}
