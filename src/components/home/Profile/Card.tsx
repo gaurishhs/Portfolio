@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { SpotifyNowPlayingData } from "types";
 import SpotifyTracker from "./SpotifyTracker";
 import config from "@/config.json";
@@ -13,7 +12,7 @@ import Link from "next/link";
 export function ProfileCard(spotifyData: SpotifyNowPlayingData) {
   return (
     <div className="overflow-hidden shadow-emerald-700/50 max-w-md rounded-lg shadow scale-100 xl:hover:scale-[1.10] z-10 hover:z-30 transition-all duration-200 ease-out">
-      <Image
+      <img
         alt="Profile Picture"
         src="/assets/me.jpeg"
         width={330}
