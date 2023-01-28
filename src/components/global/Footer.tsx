@@ -1,4 +1,4 @@
-import config from "@/config";
+import config from "@/config.json";
 import {
   FaGithub,
   FaInstagram,
@@ -6,13 +6,13 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
-import { AiFillHeart } from "react-icons/ai";
+import Image from "next/image";
 import { Link } from "./Link";
 
 export default function Footer() {
   return (
     <footer className="border-t-2 border-gray-300">
-      <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl px-3 py-4 mx-auto sm:px-4 lg:px-5">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex justify-center text-teal-300 sm:justify-start">
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -21,7 +21,7 @@ export default function Footer() {
                 aria-current="page"
                 className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
               >
-                <img
+                <Image
                   className="rounded-full"
                   src="/assets/me.jpeg"
                   alt="me"

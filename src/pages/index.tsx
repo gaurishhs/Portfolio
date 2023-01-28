@@ -2,21 +2,11 @@ import Navbar from "@/components/global/Navbar";
 import SEO from "@/components/global/SEO";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
+import Inter from "@next/font";
 import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
-const Hero = dynamic(() => import("@/components/home/Hero"), {
-  ssr: false,
-  loading: () => {
-    return (
-      <Fragment>
-        <div className="flex flex-col items-center justify-center w-full h-screen">
-          <div className="spinner"></div>
-        </div>
-      </Fragment>
-    );
-  },
-});
+import Hero from "@/components/home/Hero";
 
 const Home: NextPage = () => {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import config from "@/config";
+import config from "@/config.json";
 import Image from "next/image";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";

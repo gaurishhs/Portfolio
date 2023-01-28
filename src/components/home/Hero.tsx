@@ -1,5 +1,5 @@
 import Twemoji from "../global/Twemoji";
-import config from "@/config";
+import config from "@/config.json";
 import Typewriter from "typewriter-effect";
 import { ProfileCard } from "./Profile/Card";
 import useSWR from "swr";
@@ -15,13 +15,13 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
         <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
           <div className="max-w-2xl mb-6">
-            <div className="mb-8 inline-flex gap-2 text-5xl leading-[60px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-7xl md:leading-[86px]">
+            <div className="mb-8 inline-flex gap-2 text-5xl leading-[60px] font-extrabold tracking-tight text-white md:text-7xl md:leading-[86px]">
               Whatsup! <Twemoji emoji="👋" />
             </div>
             <h2 className="font-sans font-medium tracking-tight text-neutral-200 sm:leading-none max-w-lg mb-6">
               I'm <b>Gaurish Sethia</b> - A self-taught full stack developer and a student.
             </h2>
-            <div className="text-base mt-3 text-neutral-400 md:text-lg">
+            <div className="text-base mt-3 text-white md:text-lg">
               I started my coding journey back in 2019, midst of the Novel
               Coronavirus pandemic as i was totally bored and exploring new
               opportunities as to what I was capable of.

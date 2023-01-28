@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/font": "^13.1.6",
     "@tailwindcss/typography": "^0.5.7",
     "eslint-config-next": "^13.0.0",
     "isomorphic-unfetch": "^3.1.0",

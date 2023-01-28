@@ -7,21 +7,7 @@
         {
             "title": "Projects",
             "href": "/projects"
-        },
-        {
-            "title": "Skills",
-            "href": "/skills"
         }
-    ],
-    "descriptionStrings": [
-        "I love to code.",
-        "I was born and live in Faridabad, India.",
-        "I love to learn and create new things.",
-        "I love to read books.",
-        "I love to play video games.",
-        "I love to play basketball and badminton.",
-        "I love listening to the songs of XXXTENTACION, Anuv Jain and Arjit Singh.",
-        "I love to travel to new places."
     ],
     "email": "gaurishsethia@yahoo.com",
     "github": "https://github.com/gaurishhs",
@@ -34,32 +20,38 @@
         {
             "githubURL": "https://github.com/grootmusic",
             "title": "Groot Music",
+            "technologies": ["Next", "NextAuth", "Node", "Typescript", "Redis", "Express", "Discord.js", "PostgreSQL", "AWS", "GCP"],
             "url": "https://grootbot.pro",
             "description": "I am a full time developer for this, This is basically a discord music bot with web dashboard using technologies such as Next.js, NextAuth.js, Node.js, Typescript, Redis and Express."
         },
         {
             "githubURL": "https://github.com/gaurishhs/utdocs",
             "title": "UTDocs",
+            "technologies": ["Golang", "TailwindCSS", "Alpine.js", "Goldmark"],
             "url": "https://gaurishhs.github.io/utdocs/build/",
             "description": "Simple minimalistic Documentation Generator. Made with Golang, TailwindCSS, Alpine.js"
         },
         {
             "githubURL": "https://github.com/gaurishhs/ButtonTickets",
             "title": "Button Tickets",
+            "technologies": ["Node", "Discord.js", "SQLite"],
             "description": "A simple discord ticketing bot with buttons as interface"
         },
         {
             "githubURL": "https://github.com/gaurishhs/SendClean",
             "title": "SendClean",
+            "technologies": ["Node", "Typescript"],
             "description": "A strongly typed api wrapper for https://sendclean.com with support for both node and browser. Uses in-built https module."
         },
         {
             "githubURL": "https://github.com/gaurishhs/DisableSafariPopupBlocker",
             "title": "Disable Safari Popup Blocker",
+            "technologies": ["Shell"],
             "description": "A simple shell script to disable popup blocker in Safari"
         },
         {
             "title": "Mosix",
+            "technologies": ["Quasar", "Python", "JioSaavn API", "Deta", "FastAPI"],
             "description": "A music player application built with Quasar, Python and JioSaavn api",
             "url": "https://mosix.gaurishsethia.me"
         },
@@ -71,8 +63,16 @@
         {
             "title": "Discord Webhooks Node",
             "description": "Easily send messages via discord webhooks using this package.",
+            "technologies": ["Node", "Typescript", "Phin"],
             "githubURL": "https://github.com/gaurishhs/discord-webhooks-node",
             "url": "https://npmjs.com/package/discord-webhooks-node"
+        },
+        {
+            "title": "KVB",
+            "description": "A tiny wrapper (< 3kb) in size wrapper for bun:sqlite",
+            "technologies": ["Bun", "Typescript"],
+            "githubURL": "https://github.com/gaurishhs/kvb",
+            "url": "https://npmjs.com/package/kvb"
         }
     ]
 }

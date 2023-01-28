@@ -15,8 +15,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+::selection {
+  @apply bg-emerald-400;
+}
+
 body {
-  @apply bg-zinc-900
+  background-color: rgb(47, 55, 65);
 }
 
 .nav-link {
@@ -27,25 +31,19 @@ body {
 }
 
 .link {
-  display: inline-block;
   margin-block: 2px;
   text-decoration: none;
-  position: relative;
-  --tw-text-opacity: 1;
-  color: rgb(125 211 252 / var(--tw-text-opacity));
+  @apply text-emerald-400 inline-block relative;
 }
+
 .link::after {
   content: "";
-  width: 100%;
   height: 1px;
-  background-color: #3ddc97;
   border-radius: 4px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease;
+  @apply bg-emerald-400 w-full absolute left-0 bottom-0;
 }
 .link:hover::after {
   transform: scaleX(1);
@@ -54,16 +52,17 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: radial-gradient(farthest-side,#4ac477 94%,#0000) top/9px 9px no-repeat,
-         conic-gradient(#0000 30%,#4ac477);
-  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
-  mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+  background: radial-gradient(farthest-side, #4ac477 94%, #0000) top/9px 9px
+      no-repeat,
+    conic-gradient(#0000 30%, #4ac477);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
   animation: spinner 1s infinite linear;
 }
 
 @keyframes spinner {
   100% {
-     transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
 

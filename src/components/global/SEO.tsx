@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { SEOProps } from "types";
-import config from "@/config"
+import config from "@/config.json"
 
 export default function SEO({ title, description }: SEOProps) {
   const router = useRouter();

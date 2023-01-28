@@ -13,7 +13,7 @@ export default function ProjectCard(project: Project) {
               {project.title}
             </h3>
           </div>
-          <div className="prose text-gray-500 dark:text-gray-400">
+          <div className="prose text-gray-500 dark:text-white">
             {project.description}
           </div>
           <div className="inline-flex gap-1 mt-3">
