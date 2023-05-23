@@ -1,15 +1,22 @@
 export const metadata = {
     title: "Deploying Docusaurus on Cloudflare Pages - Gaurish's Blog",
-}
+    description: "Deploying Docusaurus on Cloudflare Pages",
+    openGraph: {
+        title: "Deploying Docusaurus on Cloudflare Pages - Gaurish's Blog",
+        description: "Deploying Docusaurus on Cloudflare Pages",
+        images: [{ url: "/blog/og/deploying-docusaurus-on-cf-pages" }],
+    },
+};
 
-Hello there! 
+Hello there!
 Docusaurus is a commonly used static site generator. It is built on top of [React.js](https://reactjs.org) and can be used to make any kind of site (personal website, product, blog, marketing landing pages, etc).
 
 Cloudflare Pages is a JAMStack platform for frontend developers to collaborate and deploy websites.
 
 ## Creating the App
-- Open up your shiny terminals and create a Docusaurus app 
-How to create: https://docusaurus.io/docs/installation#scaffold-project-website
+
+-   Open up your shiny terminals and create a Docusaurus app
+    How to create: https://docusaurus.io/docs/installation#scaffold-project-website
 
 ![Creating Docusaurus App](/assets/blog/j16hk8byiphw31c7y23y.png)
 
@@ -20,7 +27,6 @@ Then, Run the start command.
 It will open up your browser to the development website: http://localhost:3000/
 
 ![Demo website](/assets/blog/orhbf4oc7rnxoejps3ws.png)
-
 
 Now, Your Docusaurus Website is ready, Let's deploy it over Cloudflare pages.
 
@@ -37,11 +43,11 @@ git init
 git add -A
 git commit -m "initial commit"
 git branch -M main
-git remote add origin https://github.com/gaurishhs/Docusaurus-Cf-Pages.git 
+git remote add origin https://github.com/gaurishhs/Docusaurus-Cf-Pages.git
 git push -u origin main
 ```
 
-After Running these commands, If you check your Github, You'll find the code there. 
+After Running these commands, If you check your Github, You'll find the code there.
 
 Head to your Cloudflare pages dashboard, Signup for pages if you haven't yet.
 
@@ -62,13 +68,13 @@ https://docusaurus-cf-pages.pages.dev/
 [Add a Custom Domain To Your App](https://developers.cloudflare.com/pages/get-started#adding-a-custom-domain)
 [Redirecting www to apex domain](https://developers.cloudflare.com/pages/how-to/www-redirect)
 
-
 ### Contact
-- If you face any issues, Do not hesitate to [contact me](https://gaurishsethia.me)
 
+-   If you face any issues, Do not hesitate to [contact me](https://gaurishsethia.me)
 
 ### Useful Links
-- [Docusaurus Documentation](https://docusaurus.io/docs)
-- [Docusaurus Discord Server](https://discord.com/invite/docusaurus)
-- [Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/)
-- [Cloudflare Developers Discord Server](https://discord.com/invite/cloudflaredev)
+
+-   [Docusaurus Documentation](https://docusaurus.io/docs)
+-   [Docusaurus Discord Server](https://discord.com/invite/docusaurus)
+-   [Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/)
+-   [Cloudflare Developers Discord Server](https://discord.com/invite/cloudflaredev)
