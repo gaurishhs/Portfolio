@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Groot Music",
+        "description": "A discord music bot with a full-blown web dashboard.",
+        "url": "https://grootbot.pro"
+    },
+    {
+        "title": "UTDocs",
+        "description": "Simple minimalistic documentation generator",
+        "url": "https://github.com/gaurishhs/utdocs"
+    },
+    {
+        "title": "SendClean",
+        "description": "Strongly typed api wrapper for sendclean",
+        "url": "https://github.com/gaurishhs/sendclean"
+    },
+    {
+        "title": "Kvb",
+        "description": "Tiny, simple wrapper for bun:sqlite",
+        "url": "https://github.com/gaurishhs/kvb"
+    },
+    {
+        "title": "Discord Webhooks Node",
+        "description": "A simple wrapper for discord webhooks",
+        "url": "https://github.com/gaurishhs/discord-webhooks-node"
+    }
+]
