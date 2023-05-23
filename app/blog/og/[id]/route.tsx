@@ -1,10 +1,10 @@
 import { ImageResponse } from "next/server";
-import posts from '../../../posts.json';
+import posts from '../../posts.json';
 
 export const runtime = "edge";
 const inter = fetch(
     new URL(
-        `../../../../../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff`,
+        `../../../../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff`,
         import.meta.url
     )
 ).then(res => res.arrayBuffer());
