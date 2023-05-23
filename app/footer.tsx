@@ -54,7 +54,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <p className="mt-4 text-sm text-center text-zinc-400 dark:text-zinc-500 lg:text-right lg:mt-0">
+          <p className="mt-4 text-sm text-center text-zinc-700 dark:text-zinc-500 lg:text-right lg:mt-0">
             &copy; {new Date().getFullYear()} Gaurish Sethia. All Rights
             Reserved.
           </p>
