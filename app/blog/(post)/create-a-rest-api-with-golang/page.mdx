@@ -1,6 +1,12 @@
 export const metadata = {
     title: "Create a Rest API with Golang - Gaurish's Blog",
-}
+    description: "Learn to create a rest api with golang",
+    openGraph: {
+        title: "Create a Rest API with Golang - Gaurish's Blog",
+        description: "Learn to create a rest api with golang",
+        images: [{ url: "/blog/og/create-a-rest-api-with-golang" }],
+    },
+};
 
 This tutorial would explain you about how you're going to code a basic rest api in golang,
 We'd be using [gin](https://github.com/gin-gonic/gin) a http web server framework.
@@ -11,6 +17,7 @@ Let's begin.
 
 Open up your shiny Terminal,
 Run the Commands
+
 ```sh
 go mod init gin-tutorial
 touch main.go
@@ -21,13 +28,11 @@ go get -u github.com/gin-gonic/gin
 
 Now, Let's Navigate to our main.go and start writing code with [vscode](https://code.visualstudio.com/)
 
-
 On top of the file, Describe the package
 
 ```go
 package main
 ```
-
 
 Now, We'd be importing gin,
 
@@ -52,8 +57,8 @@ func main() {
 	r.Run()
 }
 ```
-Read more about setTrustedProxies [here](https://github.com/gin-gonic/gin#dont-trust-all-proxies)
 
+Read more about setTrustedProxies [here](https://github.com/gin-gonic/gin#dont-trust-all-proxies)
 
 So, If we run `go run main.go`, This is what we're gonna get...
 
@@ -68,15 +73,17 @@ So, If we run `go run main.go`, This is what we're gonna get...
 [GIN-debug] Listening and serving HTTP on :8080
 
 ```
+
 Now, Open up `localhost:8080` on your browser, You'd see a `404 page not found` response, Yes, Because we haven't created any routes yet.
 
 # Creating Routes
 
 ## Get Requests
-- Get requests are handled as Router.GET, Same applies for all types of requests, Just replace GET with the type of Request,
 
+-   Get requests are handled as Router.GET, Same applies for all types of requests, Just replace GET with the type of Request,
 
 Let's create a test route:
+
 ```
 r.GET("/get", func(c *gin.Context) {
 		c.JSON(200, gin.H{
@@ -86,6 +93,7 @@ r.GET("/get", func(c *gin.Context) {
 ```
 
 So, If you now navigate to `localhost:8080/get`, You see a JSON Response
+
 ```
 {"status":"healthy"}
 ```
@@ -93,4 +101,3 @@ So, If you now navigate to `localhost:8080/get`, You see a JSON Response
 Perfect!
 
 Congratulations, You Just Learned to Create Your First Rest API With Golang.
-
