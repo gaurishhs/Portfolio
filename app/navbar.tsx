@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "./icons";
+import useHasMounted from "./useHasMounted";
 
 interface NavbarProps {
     isOpen: boolean;
@@ -56,6 +57,7 @@ export function MobileNavbar({ isOpen, toggle }: NavbarProps) {
 
 export function Navbar({ isOpen, toggle }: NavbarProps) {
     const { theme, setTheme } = useTheme();
+    const hasMounted = useHasMounted();
     return (
         <div className="w-full top-0 left-0">
             <div className="md:flex items-center justify-between bg-transparent py-4 md:px-10 px-7">
@@ -107,7 +109,7 @@ export function Navbar({ isOpen, toggle }: NavbarProps) {
                             className="flex h-6 w-6 items-center justify-center rounded-md transition"
                             aria-label="Toggle theme"
                         >
-                            {theme === "dark" ? (
+                            {hasMounted && theme === "dark" ? (
                                 <SunIcon className="w-10 h-10" onClick={() => setTheme("light")} />
                             ) : (
                                 <MoonIcon className="w-10 h-10" onClick={() => setTheme("dark")} />
