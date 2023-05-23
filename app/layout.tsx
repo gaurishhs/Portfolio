@@ -1,5 +1,4 @@
 import './globals.css';
-import "@code-hike/mdx/dist/index.css";
 import { Inter } from 'next/font/google'
 import clsx from 'clsx';
 import Navigation from './navigation';
@@ -30,7 +29,8 @@ export const metadata: Metadata = {
     creator: "@gaurishhs",
     description: "Gaurish Sethia is a full stack developer specializing in building production-ready web apps.",
     title: "Gaurish Sethia",
-  }
+  },
+  metadataBase: new URL("https://gaurishsethia.me"),
 };
 
 export default function RootLayout({
