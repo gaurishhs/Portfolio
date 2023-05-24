@@ -9,7 +9,7 @@ export function Header({ posts }: { posts: Post[] }) {
     return (
         <>
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">{currentPost?.title}</h1>
-            <span className="text-sm text-zinc-400" suppressHydrationWarning>
+            <span className="text-sm text-zinc-400">
                 Posted on {postPublished.toDateString()}
             </span>
         </>
