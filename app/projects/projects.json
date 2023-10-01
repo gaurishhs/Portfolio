@@ -1,7 +1,7 @@
 [
     {
         "title": "Groot Music",
-        "description": "A discord music bot with a full-blown web dashboard.",
+        "description": "Discord music bot with a web dashboard.",
         "url": "https://grootbot.pro"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
         "title": "Discord Webhooks Node",
-        "description": "A simple wrapper for discord webhooks",
+        "description": "Simple wrapper for discord webhooks",
         "url": "https://github.com/gaurishhs/discord-webhooks-node"
     }
 ]
