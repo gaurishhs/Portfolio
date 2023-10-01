@@ -4,14 +4,14 @@ import posts from '@/app/blog/posts.json'
 const feed = new Feed({
     title: "Gaurish's blog",
     description: "Gaurish's personal blog",
-    id: "https://gaurishsethia.me/",
-    link: "https://gaurishsethia.me/",
+    id: "https://gaurishsethia.codes/",
+    link: "https://gaurishsethia.codes/",
     language: "en", 
-    image: "https://gaurishsethia.me/me.jpeg",
-    favicon: "https://gaurishsethia.me/favicon.ico",
+    image: "https://gaurishsethia.codes/me.jpeg",
+    favicon: "https://gaurishsethia.codes/favicon.ico",
     copyright: "All rights reserved 2023, Gaurish Sethia",
     feedLinks: {
-      atom: "https://example.com/atom"
+      atom: "https://gaurishsethia.codes/atom"
     },
     author: {
       name: "Gaurish Sethia",
@@ -24,7 +24,7 @@ posts.forEach(post => {
     return feed.addItem({
         title: post.title,
         id: post.id,
-        link: `https://gaurishsethia.me/blog/${post.id}`,
+        link: `https://gaurishsethia.codes/blog/${post.id}`,
         date: new Date(post.publishedAt)
     });
 });
