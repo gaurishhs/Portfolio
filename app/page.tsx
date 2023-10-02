@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Home() {
     return (
@@ -52,17 +51,17 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <div className="flex-col flex">
+                        <div className="flex-col flex gap-2">
                             <Link className="hover:opacity-80" href="/blog">
-                                <span className="font-mono mr-1">01</span>
+                                <span className="font-mono mr-1">01.</span>
                                 Blog
                             </Link>
                             <Link className="hover:opacity-80" href="/projects">
-                                <span className="font-mono mr-1">02</span>
+                                <span className="font-mono mr-1">02.</span>
                                 Projects
                             </Link>
                         </div>
-                        <div className="flex-end flex flex-col">
+                        <div className="flex-end gap-2 flex flex-col">
                             <a
                                 className="hover:opacity-80"
                                 target="_blank"
@@ -77,7 +76,7 @@ export default function Home() {
                                 rel="noopener noreferrer"
                                 href="mailto:gaurishsethia@yahoo.com"
                             >
-                                Contact: gaurishsethia@yahoo.com
+                                Contact: Email
                             </a>
                             <a
                                 className="hover:opacity-80"
