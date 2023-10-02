@@ -48,6 +48,9 @@ module.exports = {
                             color: theme('colors.teal.600'),
                             textDecorationColor: theme('colors.teal.500')
                         },
+                        'pre': {
+                            'overflow-x': 'auto',
+                        }
                     }
                 },
             }),
@@ -56,13 +59,6 @@ module.exports = {
     future: {
         hoverOnlyWhenSupported: true,
     },
-    safelist: [
-        "md:max-w-full",
-        "lg:max-w-screen-xl",
-        "md:px-24",
-        "lg:px-8",
-        "lg:py-20"
-    ],
     plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),

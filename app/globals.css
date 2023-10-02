@@ -19,3 +19,11 @@
         transition-duration: 0ms !important;
     }
 }
+
+div[data-rehype-pretty-code-fragment] pre {
+    overflow: auto;
+}
+
+.prose > img {
+    @apply w-full;
+}

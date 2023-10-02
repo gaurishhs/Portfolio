@@ -6,12 +6,12 @@
     },
     {
         "title": "UTDocs",
-        "description": "Simple minimalistic documentation generator",
+        "description": "Simple documentation generator",
         "url": "https://github.com/gaurishhs/utdocs"
     },
     {
         "title": "SendClean",
-        "description": "Strongly typed api wrapper for sendclean",
+        "description": "Typed api wrapper for sendclean",
         "url": "https://github.com/gaurishhs/sendclean"
     },
     {

@@ -11,15 +11,18 @@ const nextConfig = {
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 }
 
-const withMDX = nextMDX({
+const withMDX = nextMDX({ 
+    extension: /\.mdx?$/,
     options: {
         rehypePlugins: [
-            [rehypePrettyCode, {
-                theme: 'dracula',
-                keepBackground: false
-            }]
-        ],
-    },  
-    extension: /\.mdx?$/,
+            [
+                rehypePrettyCode,
+                {
+                    theme: 'dracula',
+                    keepBackground: true
+                }
+            ]
+        ]
+    }
 });
 export default withMDX(nextConfig)

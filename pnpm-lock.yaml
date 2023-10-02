@@ -54,11 +54,8 @@ dependencies:
     specifier: ^2.13.0
     version: 2.13.0(react@18.2.0)
   rehype-pretty-code:
-    specifier: ^0.9.11
-    version: 0.9.11(shiki@0.14.4)
-  shiki:
-    specifier: ^0.14.4
-    version: 0.14.4
+    specifier: ^0.10.1
+    version: 0.10.1(shiki@0.14.4)
 
 devDependencies:
   '@tailwindcss/aspect-ratio':
@@ -770,8 +767,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /ansi-sequence-parser@1.1.0:
-    resolution: {integrity: sha512-lEm8mt52to2fT8GhciPCGeCXACSz2UwIN4X2e2LJSnZ5uAbn2/dsYdOmUXq0AtWS5cpAupysIneExOgH0Vd2TQ==}
+  /ansi-sequence-parser@1.1.1:
+    resolution: {integrity: sha512-vJXt3yiaUL4UU546s3rPXlsry/RnM730G1+HkpKE012AN0sx1eOrxSu95oKDIonskeLTijMgqWZ3uDEe3NFvyg==}
     dev: false
 
   /ansi-styles@4.3.0:
@@ -3459,11 +3456,11 @@ packages:
       functions-have-names: 1.2.3
     dev: false
 
-  /rehype-pretty-code@0.9.11(shiki@0.14.4):
-    resolution: {integrity: sha512-Eq90eCYXQJISktfRZ8PPtwc5SUyH6fJcxS8XOMnHPUQZBtC6RYo67gGlley9X2nR8vlniPj0/7oCDEYHKQa/oA==}
+  /rehype-pretty-code@0.10.1(shiki@0.14.4):
+    resolution: {integrity: sha512-WHjRvGlqPXG8BVRB9mK0255WvIOnzvHivAWhFkA2OG+NTkQWtTbCULZMokOHLf3Yy8q8I8/F8QNjDSQBhjMK5w==}
     engines: {node: '>=16'}
     peerDependencies:
-      shiki: '*'
+      shiki: 0.x
     dependencies:
       '@types/hast': 2.3.6
       hash-obj: 4.0.0
@@ -3632,7 +3629,7 @@ packages:
   /shiki@0.14.4:
     resolution: {integrity: sha512-IXCRip2IQzKwxArNNq1S+On4KPML3Yyn8Zzs/xRgcgOWIr8ntIK3IKzjFPfjy/7kt9ZMjc+FItfqHRBg8b6tNQ==}
     dependencies:
-      ansi-sequence-parser: 1.1.0
+      ansi-sequence-parser: 1.1.1
       jsonc-parser: 3.2.0
       vscode-oniguruma: 1.7.0
       vscode-textmate: 8.0.0

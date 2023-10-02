@@ -54,10 +54,10 @@ export default function RootLayout({
             <body
                 className={clsx(
                     inter.className,
-                    "flex min-h-screen justify-center items-center dark:bg-zinc-900 bg-zinc-50 text-zinc-800 dark:text-zinc-100"
+                    "max-w-2xl m-auto dark:bg-zinc-900 bg-zinc-50 text-zinc-800 dark:text-zinc-100"
                 )}
             >
-                <main>
+                <main className="p-6 pt-3 md:pt-6 items-center min-h-screen">
                     <Navbar />
                     {children}
                 </main>
