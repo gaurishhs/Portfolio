@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
-import { ThemeProvider } from "./theme-provider";
 import type { Metadata } from "next";
 import { Navbar } from "./navbar";
 
@@ -16,6 +15,23 @@ export const metadata: Metadata = {
         title: "Gaurish Sethia",
         description:
             "Gaurish Sethia is a full stack developer specializing in building production-ready web apps.",
+    },
+    alternates: {
+        canonical: "./",
+        types: {
+            "application/rss+xml": `https://gaurishsethia.codes/atom`,
+        },
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
     },
     twitter: {
         card: "summary_large_image",
@@ -38,15 +54,13 @@ export default function RootLayout({
             <body
                 className={clsx(
                     inter.className,
-                    "flex min-h-screen justify-center items-center dark:bg-zinc-900 bg-zinc-50"
+                    "flex min-h-screen justify-center items-center dark:bg-zinc-900 bg-zinc-50 text-zinc-800 dark:text-zinc-100"
                 )}
             >
-                <ThemeProvider attribute="class">
-                    <main>
+                <main>
                     <Navbar />
-                        {children}
-                    </main>
-                </ThemeProvider>
+                    {children}
+                </main>
             </body>
         </html>
     );

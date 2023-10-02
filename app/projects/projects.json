@@ -21,7 +21,7 @@
     },
     {
         "title": "Discord Webhooks Node",
-        "description": "Simple wrapper for discord webhooks",
+        "description": "A Simple wrapper for discord webhooks",
         "url": "https://github.com/gaurishhs/discord-webhooks-node"
     }
 ]
