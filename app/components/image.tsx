@@ -25,7 +25,7 @@ export async function Image({
 
             if (src.startsWith("http")) {
                 imageBuffer = Buffer.from(
-                    await fetch(src).then(res => res.arrayBuffer())
+                    await fetch(src).then((res) => res.arrayBuffer())
                 );
             } else {
                 if (
@@ -34,14 +34,21 @@ export async function Image({
                     process.env.NODE_ENV === "production"
                 ) {
                     imageBuffer = Buffer.from(
-                        await fetch("https://" + process.env.VERCEL_URL + src).then(res =>
-                            res.arrayBuffer()
-                        )
+                        await fetch(
+                            "https://" + process.env.VERCEL_URL + src
+                        ).then((res) => res.arrayBuffer())
                     );
                 } else {
                     imageBuffer = await readFile(
                         new URL(
-                            join(import.meta.url, "..", "..", "..", "public", src)
+                            join(
+                                import.meta.url,
+                                "..",
+                                "..",
+                                "..",
+                                "public",
+                                src
+                            )
                         ).pathname
                     );
                 }
@@ -75,8 +82,16 @@ export async function Image({
         return (
             <span className="my-5 flex flex-col items-center">
                 <NextImage
-                    width={width !== null && width !== undefined ? width * factor : undefined}
-                    height={height !== null && height !== undefined ? height * factor : undefined}
+                    width={
+                        width !== null && width !== undefined
+                            ? width * factor
+                            : undefined
+                    }
+                    height={
+                        height !== null && height !== undefined
+                            ? height * factor
+                            : undefined
+                    }
                     alt={alt ?? ""}
                     src={src}
                 />
