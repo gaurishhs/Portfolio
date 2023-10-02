@@ -5,6 +5,7 @@ export const revalidate = 60;
 
 export const metadata: Metadata = {
     title: "Projects | Gaurish Sethia",
+    description: "Projects by Gaurish Sethia",
 };
 
 export default function Projects() {

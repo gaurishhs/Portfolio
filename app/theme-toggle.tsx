@@ -1,21 +1,119 @@
 "use client";
-import { useTheme } from "next-themes";
+import { useEffect, useState, useCallback } from "react";
+import { themeEffect } from "./theme-effect";
+
 export function ThemeToggle() {
-    const { theme, setTheme } = useTheme();
-    console.log(theme);
+    // a `null` preference implies auto
+    const [preference, setPreference] = useState<undefined | null | string>(
+        undefined
+    );
+    const [currentTheme, setCurrentTheme] = useState<null | string>(null);
+    const [isHovering, setIsHovering] = useState(false);
+    const [isHoveringOverride, setIsHoveringOverride] = useState(false);
+
+    const onMediaChange = useCallback(() => {
+        const current = themeEffect();
+        setCurrentTheme(current);
+    }, []);
+
+    useEffect(() => {
+        setPreference(localStorage.getItem("theme"));
+        const current = themeEffect();
+        setCurrentTheme(current);
+
+        const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
+        matchMedia.addEventListener("change", onMediaChange);
+        return () => matchMedia.removeEventListener("change", onMediaChange);
+    }, [onMediaChange]);
+
+    const onStorageChange = useCallback(
+        (event: StorageEvent) => {
+            if (event.key === "theme") setPreference(event.newValue);
+        },
+        [setPreference]
+    );
+
+    // when the preference changes, whether from this tab or another,
+    // we want to recompute the current theme
+    useEffect(() => {
+        setCurrentTheme(themeEffect());
+    }, [preference]);
+
+    useEffect(() => {
+        window.addEventListener("storage", onStorageChange);
+        return () => window.removeEventListener("storage", onStorageChange);
+    });
+
     return (
-        <button
-            aria-label="Toggle theme"
-            type="button"
-            className="mr-3 rounded"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        >
-            {theme === "dark" ? (
-                <SunIcon className="w-4 h-4 text-white" />
-            ) : (
-                <MoonIcon className="w-4 h-4 text-zinc-800" />
+        <>
+            {isHovering && (
+                <span
+                    className={`
+            text-[9px]
+            text-zinc-400
+            mr-2
+
+            /* mobile */
+            hidden
+
+            md:inline
+          `}
+                >
+                    {preference === null
+                        ? "System"
+                        : preference === "dark"
+                        ? "Dark"
+                        : "Light"}
+                </span>
             )}
-        </button>
+
+            <button
+                aria-label="Toggle theme"
+                className={`inline-flex transition-[background-color] rounded-sm p-2 
+          hover:bg-zinc-200
+          dark:hover:bg-zinc-700
+          theme-system:!bg-inherit
+          [&_.sun-icon]:hidden
+          dark:[&_.moon-icon]:hidden
+          dark:[&_.sun-icon]:inline
+        }`}
+                onClick={(ev) => {
+                    ev.preventDefault();
+                    setIsHoveringOverride(true);
+
+                    let newPreference: string | null =
+                        currentTheme === "dark" ? "light" : "dark";
+                    const systemTheme = window.matchMedia(
+                        "(prefers-color-scheme: dark)"
+                    ).matches
+                        ? "dark"
+                        : "light";
+
+                    // if the user has their current OS theme as a preference (instead of auto)
+                    // and they click the toggle, we want to switch to reset the preference
+                    if (preference !== null && systemTheme === currentTheme) {
+                        newPreference = null;
+                        localStorage.removeItem("theme");
+                    } else {
+                        localStorage.setItem("theme", newPreference);
+                    }
+
+                    setPreference(newPreference);
+                }}
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => {
+                    setIsHovering(false);
+                    setIsHoveringOverride(false);
+                }}
+            >
+                <span className="sun-icon">
+                    <SunIcon />
+                </span>
+                <span className="moon-icon">
+                    <MoonIcon className="fill-zinc-800" />
+                </span>
+            </button>
+        </>
     );
 }
 
@@ -27,6 +125,7 @@ function MoonIcon(props: any) {
             height={16}
             strokeWidth={0}
             viewBox="0 0 56 56"
+            fill="#000"
             {...props}
         >
             <path

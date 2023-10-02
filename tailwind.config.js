@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -52,8 +53,21 @@ module.exports = {
             }),
         }
     },
+    future: {
+        hoverOnlyWhenSupported: true,
+    },
+    safelist: [
+        "md:max-w-full",
+        "lg:max-w-screen-xl",
+        "md:px-24",
+        "lg:px-8",
+        "lg:py-20"
+    ],
     plugins: [
         require('@tailwindcss/typography'),
-        require('@tailwindcss/aspect-ratio')
+        require('@tailwindcss/aspect-ratio'),
+        plugin(function ({ addVariant}) {
+            addVariant('theme-system', '.theme-system &')
+        }) 
     ],
 }
