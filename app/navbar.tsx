@@ -26,14 +26,14 @@ export const Navbar = () => {
         return () => clearInterval(intervalID);
     }, []);
     return (
-        <div className="flex mx-auto px-3 py-4 flex-row justify-between align-top">
+        <div className="container mx-auto flex justify-between flex-wrap p-5 md:flex-row items-center">
             <Link
                 href="/"
-                className="text-sm font-bold tracking-tight text-zinc-800 mb-8 dark:text-zinc-100"
+                className="flex align-middle h-full items-center md:mb-0 text-sm font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
             >
                 GAURISHHS
             </Link>
-            <div className="flex-end">
+            <div className="md:ml-auto text-zinc-800 dark:text-zinc-100 flex gap-1 items-center text-base flex-end">
                 <ThemeToggle />
                 <span>Delhi, India, {time}</span>
             </div>
