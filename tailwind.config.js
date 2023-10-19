@@ -62,8 +62,5 @@ module.exports = {
     plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
-        plugin(function ({ addVariant}) {
-            addVariant('theme-system', '.theme-system &')
-        }) 
     ],
 }
