@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ThemeToggle } from "./theme-toggle";
+import ThemeToggle from "./theme-toggle";
 import { usePathname } from "next/navigation";
+import { MotionDiv } from "./motion";
+import { useReducedMotion } from "framer-motion";
 
 export const Navbar = () => {
     const [time, setTime] = useState("");
     const pathname = usePathname();
+    const shouldReduceMotion = useReducedMotion();
     useEffect(() => {
         const updateTime = () => {
             const now = new Date();
@@ -22,13 +25,21 @@ export const Navbar = () => {
         // Initial load
         updateTime();
 
-        const intervalID = setInterval(updateTime, 60000);
+        const now = new Date();
+        const secondsUntilNextMinute = 60 - now.getSeconds();
+        const intervalMilliseconds = (secondsUntilNextMinute + 1) * 1000; // Add 1 second to be safe
+        const intervalID = setInterval(updateTime, intervalMilliseconds);
 
         // Cleanup
         return () => clearInterval(intervalID);
     }, []);
     return (
-        <div className="flex justify-between flex-wrap md:flex-row mb-4 items-center">
+        <MotionDiv variants={
+            {
+                hidden: { opacity: shouldReduceMotion ? 1 : 0, y: shouldReduceMotion ? 0 : -20 },
+                visible: { opacity: 1, y: 0 },
+            }
+        } initial="hidden" animate="visible" className="flex justify-between flex-wrap md:flex-row mb-4 items-center">
             {pathname == "/" ? (
                 <span className="font-bold">GAURISHHS</span>
             ) : (
@@ -43,6 +54,6 @@ export const Navbar = () => {
                 <ThemeToggle />
                 <span>Delhi, India, {time}</span>
             </div>
-        </div>
+        </MotionDiv>
     );
 };

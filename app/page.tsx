@@ -1,14 +1,35 @@
 "use client";
 
 import Link from "next/link";
+import { MotionDiv } from "./motion";
+import { useReducedMotion } from "framer-motion";
 
 export default function Home() {
+    const shouldReduceMotion = useReducedMotion();
+
+    const containerVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: shouldReduceMotion ? 0 : 0.3,
+            },
+        },
+    };
+
+    const childVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { 
+            opacity: 1, 
+            y: 0, 
+            transition: { duration: shouldReduceMotion ? 0 : 0.3 } 
+        },
+    };
     return (
         <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
             <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
-                <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
+                <MotionDiv initial="hidden" animate="visible" variants={containerVariants} className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
                     <div className="max-w-2xl mb-6">
-                        <div className="text-base mt-3 text-zinc-600 dark:text-zinc-400">
+                        <MotionDiv variants={childVariants} className="text-base mt-3 text-zinc-600 dark:text-zinc-400">
                             <p>
                                 Hi, I&apos;m{" "}
                                 <span className="italic">Gaurish Sethia</span>,
@@ -48,9 +69,11 @@ export default function Home() {
                                     Liberapay
                                 </a>
                             </p>
-                        </div>
+                        </MotionDiv>
                     </div>
-                    <div className="flex flex-row justify-between">
+                    <MotionDiv
+                        variants={childVariants}
+                        className="flex flex-row justify-between">
                         <div className="flex-col flex gap-2">
                             <Link className="hover:opacity-80" href="/blog">
                                 <span className="font-mono mr-1">01.</span>
@@ -95,8 +118,8 @@ export default function Home() {
                                 Misc: GPG Key
                             </a>
                         </div>
-                    </div>
-                </div>
+                    </MotionDiv>
+                </MotionDiv>
             </div>
         </div>
     );
