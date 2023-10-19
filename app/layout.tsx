@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import clsx from "clsx";
 import type { Metadata } from "next";
 import { Navbar } from "./navbar";
+import { ThemeProvider } from "./theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,10 +58,12 @@ export default function RootLayout({
                     "max-w-2xl m-auto dark:bg-zinc-900 bg-zinc-50 text-zinc-800 dark:text-zinc-100"
                 )}
             >
-                <main className="p-6 pt-3 md:pt-6 items-center min-h-screen">
-                    <Navbar />
-                    {children}
-                </main>
+                <ThemeProvider attribute="class">
+                    <main className="p-6 pt-3 md:pt-6 items-center min-h-screen">
+                        <Navbar />
+                        {children}
+                    </main>
+                </ThemeProvider>
             </body>
         </html>
     );

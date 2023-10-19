@@ -7,6 +7,7 @@ const nextConfig = {
     swcMinify: true,
     experimental: {
         scrollRestoration: true,
+        serverComponentsExternalPackages: ['@libsql/client']
     },
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 }

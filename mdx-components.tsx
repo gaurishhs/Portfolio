@@ -1,4 +1,3 @@
-//@ts-nocheck
 import type { MDXComponents } from "mdx/types";
 import { Image } from "@/app/components/image";
 import { Pre } from "@/app/components/pre";
