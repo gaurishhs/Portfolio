@@ -1,5 +1,6 @@
 "use client";
 import { Post } from "@/app/types";
+import ViewCounter from "@/app/views";
 import { useSelectedLayoutSegments } from "next/navigation";
 
 export function Header({ posts }: { posts: Post[] }) {
@@ -14,6 +15,7 @@ export function Header({ posts }: { posts: Post[] }) {
                 </h1>
                 <span className="text-sm text-zinc-400 font-mono">
                     {postPublished.toLocaleDateString('en-GB')}
+                    <ViewCounter slug={currentPost?.id} />
                 </span>
             </div>
         </>
