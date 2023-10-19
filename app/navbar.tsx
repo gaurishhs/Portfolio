@@ -24,11 +24,7 @@ export const Navbar = () => {
         };
         // Initial load
         updateTime();
-
-        const now = new Date();
-        const secondsUntilNextMinute = 60 - now.getSeconds();
-        const intervalMilliseconds = (secondsUntilNextMinute + 1) * 1000; // Add 1 second to be safe
-        const intervalID = setInterval(updateTime, intervalMilliseconds);
+        const intervalID = setInterval(updateTime, 1000);
 
         // Cleanup
         return () => clearInterval(intervalID);
