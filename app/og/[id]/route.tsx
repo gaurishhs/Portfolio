@@ -2,6 +2,7 @@ export const runtime = "edge";
 
 import { ImageResponse } from "next/server";
 import posts from "../../blog/posts.json"
+import { getViews } from "@/app/turso";
 
 // fonts
 const inter300 = fetch(
@@ -35,6 +36,8 @@ export async function GET(_req: Request, { params: { id } }: {
     return new Response("Not found", { status: 404 });
   }
 
+  const views = await getViews(post.id);
+
   return new ImageResponse(
     (
       <div
@@ -60,7 +63,7 @@ export async function GET(_req: Request, { params: { id } }: {
           <div
             tw="mt-4 flex text-xl font-sans text-zinc-500"
           >
-            {new Date(post.publishedAt).toLocaleDateString('en-GB')} - gaurishsethia.codes
+            {new Date(post.publishedAt).toLocaleDateString('en-GB')} - {views?.toLocaleString()} {views === 1 ? "view" : "views"}
           </div>
         </main>
       </div>

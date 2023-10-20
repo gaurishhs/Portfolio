@@ -1,5 +1,6 @@
 import nextMDX from '@next/mdx';
 import rehypePrettyCode from 'rehype-pretty-code';
+import remarkGfm from 'remark-gfm';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -23,7 +24,8 @@ const withMDX = nextMDX({
                     keepBackground: true
                 }
             ]
-        ]
+        ],
+        remarkPlugins: [remarkGfm]
     }
 });
 export default withMDX(nextConfig)
