@@ -34,7 +34,7 @@ export default function Blog() {
             <div className="flex items-center justify-center flex-row gap-2">
                 <Link
                     className="font-medium text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-500"
-                    href={"/atom"}
+                    href={"/feed.xml"}
                 >
                     Atom
                 </Link>
