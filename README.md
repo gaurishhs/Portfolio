@@ -4,4 +4,5 @@ My portfolio website created using Next.js and Tailwind CSS.
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/gaurishhs/Portfolio/blob/main/LICENSE) file for details 
+code: MIT
+blog posts and images: CC BY 4.0

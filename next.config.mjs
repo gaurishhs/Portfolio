@@ -1,6 +1,7 @@
 import nextMDX from '@next/mdx';
 import rehypePrettyCode from 'rehype-pretty-code';
 import remarkGfm from 'remark-gfm';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,12 +21,16 @@ const withMDX = nextMDX({
             [
                 rehypePrettyCode,
                 {
-                    theme: 'dracula',
+                    theme: {
+                        dark: 'min-dark',
+                        light: 'min-light'
+                    },
                     keepBackground: true
                 }
-            ]
+            ],
+            rehypeAutolinkHeadings,
         ],
-        remarkPlugins: [remarkGfm]
+        remarkPlugins: [remarkGfm],
     }
 });
 export default withMDX(nextConfig)

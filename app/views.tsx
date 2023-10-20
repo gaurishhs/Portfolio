@@ -14,6 +14,7 @@ export default function ViewCounter({ slug }: { slug?: string }) {
     const viewLogged = useRef(false);
  
 	useEffect(() => {
+        if ("development" === process.env.NODE_ENV) return;
         if (!slug || viewLogged.current) return;
 		fetch(`/api/views/${slug}`, {
             method: 'POST',
