@@ -13,7 +13,7 @@ export function Header({ posts }: { posts: Post[] }) {
                 <h1 className="text-2xl sm:text-xl font-bold tracking-tight">
                     {currentPost?.title}
                 </h1>
-                <span className="text-sm text-zinc-400 font-mono">
+                <span className="text-sm text-zinc-400 flex flex-col font-mono">
                     {postPublished.toLocaleDateString('en-GB')}
                     <ViewCounter slug={currentPost?.id} />
                 </span>

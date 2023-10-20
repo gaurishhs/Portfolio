@@ -23,7 +23,7 @@ function ThemeToggle() {
 
     return (
         <button
-            className='inline-flex transition-[background-color] rounded-sm p-2 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+            className='inline-flex ease-in-out rounded-sm p-2 hover:bg-zinc-200 dark:hover:bg-zinc-700'
             onClick={() => {
                 setTheme(theme === 'light' ? 'dark' : 'light')
             }}

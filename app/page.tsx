@@ -21,7 +21,7 @@ export default function Home() {
         visible: { 
             opacity: 1, 
             y: 0, 
-            transition: { duration: shouldReduceMotion ? 0 : 0.3 } 
+            transition: { duration: shouldReduceMotion ? 0 : 0.5 } 
         },
     };
     return (

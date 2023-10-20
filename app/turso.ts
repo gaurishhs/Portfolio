@@ -17,7 +17,8 @@ export const getViews = async (slug: string) => {
         sql: 'SELECT count FROM views WHERE slug = ?',
         args: [slug]
     })
-    return views.rows[0].count || 0;
+    // Make sure result is int
+    return Number(views.rows[0].count) || 0;
 }
 
 export const increment = async (slug: string) => {
