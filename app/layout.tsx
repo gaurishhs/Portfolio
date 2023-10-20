@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Gaurish Sethia",
-    keywords: ["Gaurish Sethia", "Gaurish", "Sethia", "gaurishhs", "gaurish"],
+    keywords: ["Gaurish Sethia", "Gaurish", "Sethia", "gaurishhs", "gaurish", "apidev234"],
     openGraph: {
         type: "website",
         url: "https://gaurishsethia.codes",
         title: "Gaurish Sethia",
         description:
-            "Gaurish Sethia is a full stack developer specializing in building production-ready web apps.",
+            "Gaurish Sethia is a self-taught full stack developer who is passionate about writing code and is an open source enthusiast.",
     },
     alternates: {
         canonical: "./",
@@ -34,12 +34,13 @@ export const metadata: Metadata = {
             "max-snippet": -1,
         },
     },
+    themeColor: "#00e000",
     twitter: {
         card: "summary_large_image",
         site: "@gaurishhs",
         creator: "@gaurishhs",
         description:
-            "Gaurish Sethia is a full stack developer specializing in building production-ready web apps.",
+            "Gaurish Sethia is a self-taught full stack developer who is passionate about writing code and is an open source enthusiast.",
         title: "Gaurish Sethia",
     },
     metadataBase: new URL("https://gaurishsethia.codes"),
