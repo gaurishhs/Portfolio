@@ -11,7 +11,7 @@ const feed = new Feed({
     favicon: "https://gaurishsethia.codes/favicon.ico",
     copyright: "All rights reserved 2023, Gaurish Sethia",
     feedLinks: {
-      atom: "https://gaurishsethia.codes/atom"
+      atom: "https://gaurishsethia.codes/feed.xml"
     },
     author: {
       name: "Gaurish Sethia",
