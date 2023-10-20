@@ -32,7 +32,7 @@ export const Navbar = () => {
     return (
         <MotionDiv variants={
             {
-                hidden: { opacity: shouldReduceMotion ? 1 : 0, y: shouldReduceMotion ? 0 : -20 },
+                hidden: { opacity: shouldReduceMotion ? 1 : 0, y: shouldReduceMotion ? 0 : -20, transition: { duration: shouldReduceMotion ? 0 : 0.5 } },
                 visible: { opacity: 1, y: 0 },
             }
         } initial="hidden" animate="visible" className="flex justify-between flex-wrap md:flex-row mb-4 items-center">
