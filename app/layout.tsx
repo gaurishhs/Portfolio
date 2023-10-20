@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "./",
         types: {
-            "application/rss+xml": `https://gaurishsethia.codes/atom`,
+            "application/rss+xml": `https://gaurishsethia.codes/feed.xml`,
         },
     },
     robots: {
