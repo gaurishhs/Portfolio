@@ -1,8 +1,10 @@
-export const Code = ({ children }: {
+export const Code = ({ children, ...props }: {
     children: React.ReactNode;
+    [key: string]: any;
 }) => {
     return (
       <code
+        {...props}
         className={`
           [p_&]:text-sm
           [p_&]:px-1

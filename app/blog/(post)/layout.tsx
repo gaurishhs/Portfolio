@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 y: 0,
                 transition: { duration: shouldReduceMotion ? 0 : 0.5 }
             },
-        }} className="prose mx-auto max-w-full overflow-x-scroll prose-zinc dark:prose-invert">
+        }} className="prose mx-auto max-w-full overflow-x-hidden prose-zinc dark:prose-invert">
             <Header posts={posts} />
             {children}
             <footer className="text-center flex flex-col text-sm">
