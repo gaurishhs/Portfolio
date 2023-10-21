@@ -1,0 +1,116 @@
+---
+interface Props {
+  title: string;
+  ogImg?: string;
+  description?: string;
+}
+
+const { 
+  title = 'Gaurish Sethia', 
+  ogImg = '/og.png', 
+  description = "Gaurish Sethia is a self-taught full stack developer who is passionate about writing code and is an open source enthusiast.",
+} = Astro.props;
+
+import '@fontsource/inter';
+import { Navbar } from '../components/Navbar.tsx';
+import { ViewTransitions } from "astro:transitions";
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="canonical" content={canonicalURL} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.ico" />
+    <!-- General -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Gaurish Sethia" />
+    <meta name="theme-color" content="#00e000" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="keywords" content="gaurish sethia, sethia, gaurish, gaurishhs, apidev234" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={"https://gaurishsethia.codes" + ogImg} />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={"https://gaurishsethia.codes" + ogImg} />
+    <ViewTransitions />
+  </head>
+  <body class="max-w-2xl antialiased m-auto bg-zinc-900 text-zinc-100">
+    <main class="p-6 pt-3 md:pt-6 items-center min-h-screen">
+      <Navbar client:only />
+      <slot />
+    </main>
+  </body>
+</html>
+<style is:global>
+  :root {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+    @apply bg-zinc-900;
+  }
+
+  div[data-rehype-pretty-code-fragment] pre {
+    @apply overflow-auto;
+  }
+
+  .prose > img {
+    @apply w-full;
+  }
+
+  .dark .prose > pre[data-theme="light"] {
+    @apply hidden;
+  }
+
+  .prose > pre[data-theme="dark"] {
+    @apply hidden;
+  }
+
+  .prose .anchor {
+    @apply absolute invisible no-underline;
+
+    margin-left: -1em;
+    padding-right: 0.5em;
+    width: 80%;
+    max-width: 700px;
+    cursor: pointer;
+  }
+
+  .anchor:hover {
+    @apply visible;
+  }
+
+  .prose a {
+    @apply transition-all decoration-zinc-400 dark:decoration-zinc-600 underline-offset-2 decoration-[0.1em];
+  }
+
+  .prose .anchor:after {
+    @apply text-zinc-300 dark:text-zinc-700;
+    content: "#";
+  }
+
+  .prose *:hover > .anchor {
+    @apply visible;
+  }
+</style>

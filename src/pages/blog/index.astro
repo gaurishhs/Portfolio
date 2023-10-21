@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/Main.astro";
+import List, { type KV } from "../../components/List.astro";
+import { getPosts } from "../../utils/posts";
+
+const posts = await getPosts();
+
+const items: KV[] = posts.map((post) => ({
+  key: post.data.title,
+  value: new Date(post.data.date).toDateString(),
+  link: `/blog/${post.slug}`,
+}));
+---
+
+<MainLayout title="Blog - Gaurish Sethia">
+  <div class="flex flex-col gap-1">
+    <List items={items} />
+    <a class="text-center" href="/rss.xml">RSS</a>
+  </div>
+</MainLayout>

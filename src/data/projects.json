@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Germla",
+        "description": "Open source AI-based feedback management for actionable insights.",
+        "url": "https://github.com/germla"
+    },
+    {
+        "title": "Groot Music",
+        "description": "Discord music bot with a web dashboard.",
+        "url": "https://grootbot.pro"
+    },
+    {
+        "title": "UTDocs",
+        "description": "Simple documentation generator",
+        "url": "https://github.com/gaurishhs/utdocs"
+    },
+    {
+        "title": "SendClean",
+        "description": "Typed api wrapper for sendclean",
+        "url": "https://github.com/gaurishhs/sendclean"
+    },
+    {
+        "title": "Kvb",
+        "description": "Tiny, simple wrapper for bun:sqlite",
+        "url": "https://github.com/gaurishhs/kvb"
+    },
+    {
+        "title": "Discord Webhooks Node",
+        "description": "A Simple wrapper for discord webhooks",
+        "url": "https://github.com/gaurishhs/discord-webhooks-node"
+    }
+]
