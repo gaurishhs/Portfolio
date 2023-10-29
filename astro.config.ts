@@ -4,6 +4,7 @@ import preact from '@astrojs/preact';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkGfm from 'remark-gfm';
+import sitemap from '@astrojs/sitemap';
 import remarkFootnotes from 'remark-footnotes';
 import { remarkReadingTime } from './remark-reading-time';
 import { sharpImageService } from 'astro/config';
@@ -13,7 +14,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://gaurishsethia.codes',
-  integrations: [tailwind(), preact(), mdx()],
+  integrations: [tailwind(), preact(), mdx(), sitemap()],
   markdown: {
     syntaxHighlight: false,
     rehypePlugins: [[rehypePrettyCode, {
