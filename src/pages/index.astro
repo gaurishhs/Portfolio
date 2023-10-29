@@ -1,0 +1,23 @@
+---
+import Blog from "../components/Blog.astro";
+import Projects from "../components/Projects.astro";
+import MainLayout from "../layouts/Main.astro";
+---
+
+<MainLayout title="Gaurish Sethia">
+	<div class="text-base mx-auto">
+		<p>
+			Hi there, I&apos;m{" "}
+			<span class="italic font-semibold">Gaurish Sethia</span>, a 16 y/o
+			self-taught full stack developer. I love to write code and learn new
+			things. I am an Open Source enthusiast and I love to contribute to
+			Open Source projects.
+		</p>
+		<p class="mt-4">
+			Besides code, I have been interested in Computer Hardware,
+			Networking and Security.
+		</p>
+	</div>
+	<Projects />
+	<Blog />
+</MainLayout>

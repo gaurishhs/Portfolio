@@ -1,0 +1,128 @@
+---
+interface Props {
+  title: string;
+  ogImg?: string;
+  description?: string;
+}
+
+const {
+  title = "Gaurish Sethia",
+  ogImg = "/og.png",
+  description = "Gaurish Sethia is a self-taught full stack developer who is passionate about writing code and is an open source enthusiast.",
+} = Astro.props;
+
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="canonical" content={canonicalURL} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.ico" />
+    <!-- General -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Gaurish Sethia" />
+    <meta name="theme-color" content="#00e000" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta
+      name="keywords"
+      content="gaurish sethia, sethia, gaurish, gaurishhs, apidev234"
+    />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={"https://gaurishsethia.codes" + ogImg} />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta
+      property="twitter:image"
+      content={"https://gaurishsethia.codes" + ogImg}
+    />
+    <ViewTransitions />
+  </head>
+  <body class="max-w-2xl antialiased mx-auto bg-neutral-900 text-neutral-300">
+    <main class="p-6 pt-2 md:pt-6 items-center min-h-screen space-y-6">
+      <Navbar />
+      <slot />
+      <Footer />
+    </main>
+  </body><style is:global>
+
+    html {
+      @apply antialiased touch-manipulation scroll-smooth text-base;
+      text-rendering: optimizeLegibility;
+      color-scheme: dark;
+    }
+
+    body {
+      font-family: system-ui, "Segoe UI", roboto, "Noto Sans", oxygen, ubuntu,
+        cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    ::selection {
+      @apply bg-neutral-600;
+    }
+
+    .prose pre {
+      @apply bg-neutral-800;
+    }
+
+    .prose code {
+      @apply bg-neutral-800
+    }
+
+    .prose a {
+      @apply transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400
+    }
+
+    p {
+      font-feature-settings: "kern", "zero", "liga";
+    }
+
+    div[data-rehype-pretty-code-fragment] pre {
+      @apply overflow-auto;
+    }
+
+    .prose > img {
+      @apply w-full;
+    }
+
+    .prose .anchor {
+      @apply absolute invisible no-underline;
+
+      margin-left: -1em;
+      padding-right: 0.5em;
+      width: 80%;
+      max-width: 700px;
+      cursor: pointer;
+    }
+
+    .anchor:hover {
+      @apply visible;
+    }
+
+    .prose .anchor:after {
+      @apply text-zinc-300 dark:text-zinc-700;
+      content: "#";
+    }
+
+    .prose *:hover > .anchor {
+      @apply visible;
+    }
+  </style>
+</html>
