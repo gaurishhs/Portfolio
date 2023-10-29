@@ -13,6 +13,7 @@ const {
 
 import Navbar from "../components/Navbar.astro";
 import { ViewTransitions } from "astro:transitions";
+import "@fontsource/jetbrains-mono";
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
@@ -53,7 +54,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     />
     <ViewTransitions />
   </head>
-  <body class="max-w-2xl antialiased mx-auto bg-neutral-900 text-neutral-300">
+  <body class="max-w-xl antialiased mx-auto bg-neutral-900 text-neutral-300">
     <main class="p-6 pt-2 md:pt-6 items-center min-h-screen space-y-6">
       <Navbar />
       <slot />
@@ -81,7 +82,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     }
 
     .prose code {
-      @apply bg-neutral-800
+      @apply bg-neutral-800 font-mono
     }
 
     .prose a {

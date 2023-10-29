@@ -16,6 +16,7 @@
     "@astrojs/sitemap": "^3.0.2",
     "@astrojs/tailwind": "^5.0.2",
     "@fontsource/inter": "^5.0.14",
+    "@fontsource/jetbrains-mono": "^5.0.17",
     "@resvg/resvg-js": "^2.6.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
