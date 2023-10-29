@@ -24,20 +24,20 @@ export async function GET(context: APIContext) {
     });
 
     const markup = html`<div
-    tw="flex p-10 h-full bg-zinc-900 w-full flex-col"
+    tw="flex p-10 h-full bg-neutral-900 w-full flex-col"
     style={{
       fontFamily: 'Inter 300'
     }}
   >
     <header tw="flex text-sm w-full">
-      <div tw="font-bold text-zinc-100" style={{
+      <div tw="font-bold text-neutral-100" style={{
         fontFamily: 'Inter 600' 
       }}>
         Gaurish Sethia
       </div>
     </header>
 
-    <main tw="flex text-zinc-100 items-center grow pb-3 flex-col justify-center">
+    <main tw="flex text-neutral-100 items-center grow pb-3 flex-col justify-center">
       <div tw="flex">
         <div
           tw="p-5 text-4xl font-medium rounded-sm text-center"
@@ -50,7 +50,7 @@ export async function GET(context: APIContext) {
       </div>
 
       <div
-        tw="mt-4 flex text-xl font-sans text-zinc-500"
+        tw="mt-4 flex text-xl font-sans text-neutral-500"
       >
         ${date}
       </div>

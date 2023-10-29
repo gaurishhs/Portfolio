@@ -1,23 +1,71 @@
 ---
-import Blog from "../components/Blog.astro";
-import Projects from "../components/Projects.astro";
 import MainLayout from "../layouts/Main.astro";
 ---
 
 <MainLayout title="Gaurish Sethia">
-	<div class="text-base mx-auto">
-		<p>
-			Hi there, I&apos;m{" "}
-			<span class="italic font-semibold">Gaurish Sethia</span>, a 16 y/o
-			self-taught full stack developer. I love to write code and learn new
-			things. I am an Open Source enthusiast and I love to contribute to
-			Open Source projects.
-		</p>
-		<p class="mt-4">
-			Besides code, I have been interested in Computer Hardware,
-			Networking and Security.
-		</p>
+		<div class="text-base mt-3">
+			<p>
+				Hi, I&apos;m{" "}
+				<span class="italic">Gaurish Sethia</span>, A full stack
+				developer. I work mostly with React. I&apos;m currently a
+				student and mostly do Open source. I&apos;ve always been
+				passionate about writing code and learning new things. My
+				interests include Artificial Intelligence, Deep Learning and
+				Cybersecurity as well.
+			</p>
+			<p class="mt-2">
+				Besides code, I&apos;ve been interested in Computer Hardware,
+				Networking and Cyber Security.
+			</p>
 	</div>
-	<Projects />
-	<Blog />
+	<div class="flex flex-row text-neutral-100 justify-between">
+		<div class="flex-col flex gap-2">
+			<a class="hover:opacity-80" href="/blog">
+				<span class="font-mono mr-1">01.</span>
+				 Blog
+			</a>
+			<a class="hover:opacity-80" href="/projects">
+				<span class="font-mono mr-1">02.</span>
+				 Projects
+			</a>
+			<a class="hover:opacity-80" href="/sitemap-index.xml">
+				<span class="font-mono mr-1">03.</span>
+				 Sitemap
+			</a>
+		</div>
+		<div class="flex-end gap-2 text-neutral-100 flex flex-col">
+			<a
+				class="hover:opacity-80"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/gaurishhs"
+			>
+				Github: gaurishhs
+			</a>
+			<a
+				class="hover:opacity-80"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="mailto:gaurishsethia@yahoo.com"
+			>
+				Contact: Email
+			</a>
+			<a
+				class="hover:opacity-80"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://x.com/gaurishhs"
+			>
+				Social: X
+			</a>
+			<a
+				class="hover:opacity-80"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/gaurishhs.gpg"
+			>
+				Misc: GPG Key
+			</a>
+		</div>
+	</div>
 </MainLayout>
