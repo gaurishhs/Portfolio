@@ -1,0 +1,33 @@
+---
+import MailIcon from '../icons/mail.astro';
+import GithubIcon from '../icons/github.astro';
+import XIcon from '../icons/x.astro';
+import SitemapIcon from '../icons/sitemap.astro';
+import RSSIcon from '../icons/rss.astro';
+---
+
+<footer>
+    <hr class="border-neutral-500" />
+    <div class="flex flex-row justify-between mx-auto mt-4">
+        <span>
+            Gaurish Sethia
+        </span>
+        <div class="flex-row flex gap-4">
+            <a href="/rss.xml">
+                <RSSIcon />
+            </a>
+            <a href="/sitemap-index.xml">
+                <SitemapIcon />
+            </a>
+            <a href="mailto:gaurishsethia@yahoo.com">
+                <MailIcon />
+            </a>
+            <a href="https://github.com/gaurishhs">
+                <GithubIcon />
+            </a>
+            <a href="https://x.com/gaurishhs">
+                <XIcon />
+            </a>
+        </div>
+    </div>
+</footer>
