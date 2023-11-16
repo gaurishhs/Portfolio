@@ -4,6 +4,7 @@ import preact from '@astrojs/preact';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
 import sitemap from '@astrojs/sitemap';
 import remarkFootnotes from 'remark-footnotes';
 import { remarkReadingTime } from './remark-reading-time';
@@ -17,14 +18,19 @@ export default defineConfig({
   integrations: [tailwind(), preact(), mdx(), sitemap()],
   markdown: {
     syntaxHighlight: false,
-    rehypePlugins: [[rehypePrettyCode, {
-      theme: 'css-variables',
-      keepBackground: false
-    }], [rehypeAutolinkHeadings, {
-      properties: {
-        className: ['anchor']
-      }
-    }]],
+    rehypePlugins: [
+      [rehypePrettyCode, {
+        theme: 'min-dark',
+        keepBackground: false
+      }],
+      rehypeSlug,
+      [rehypeAutolinkHeadings, {
+        properties: {
+          className: ['anchor']
+        }
+      },
+      ]
+    ],
     remarkPlugins: [remarkGfm, remarkFootnotes, remarkReadingTime]
   },
   image: {

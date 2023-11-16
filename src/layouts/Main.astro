@@ -60,22 +60,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       <slot />
     </main>
     <style is:global>
-      :root {
-        --shiki-color-text: theme("colors.neutral.300");
-        --shiki-color-background: theme("colors.white");
-        --shiki-token-constant: theme("colors.neutral.300");
-        --shiki-token-string: theme("colors.neutral.200");
-        --shiki-token-comment: theme("colors.neutral.400");
-        --shiki-token-keyword: theme("colors.neutral.400");
-        --shiki-token-parameter: theme("colors.neutral.700");
-        --shiki-token-function: theme("colors.neutral.400");
-        --shiki-token-string-expression: theme("colors.neutral.400");
-        --shiki-token-punctuation: theme("colors.neutral.400");
-        --shiki-token-link: theme("colors.neutral.700");
-      }
-
       span [data-highlighted-chars] {
-        @apply bg-neutral-500 font-bold shadow-md p-1 rounded-sm
+        @apply bg-purple-500 font-bold shadow-md p-1 rounded-sm
       }
 
       html {
@@ -115,7 +101,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       }
 
       .prose .anchor {
-        @apply absolute invisible no-underline;
+        @apply align-middle absolute invisible no-underline;
 
         margin-left: -1em;
         padding-right: 0.5em;

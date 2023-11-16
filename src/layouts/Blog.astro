@@ -20,11 +20,11 @@ const getFormattedDate = () => {
   let agoString = "";
 
   if (years > 0) {
-    agoString = `${years} year${years > 1 ? "s" : ""} ago`;
+    agoString = `${years} y ago`;
   } else if (months > 0) {
-    agoString = `${months} month${months > 1 ? "s" : ""} ago`;
+    agoString = `${months} mo ago`;
   } else if (days > 0) {
-    agoString = `${days} day${days > 1 ? "s" : ""} ago`;
+    agoString = `${days} d ago`;
   } else {
     agoString = "today";
   }
@@ -47,9 +47,9 @@ const getFormattedDate = () => {
       <h1 class="text-3xl sm:text-2xl font-bold tracking-tight">
         {title}
       </h1>
-      <time class="text-sm text-neutral-400 font-mono">
-        {getFormattedDate()} - {readingTime}
-      </time>
+        <time class="text-sm text-neutral-400 font-mono">
+          {getFormattedDate()} • {readingTime}
+        </time>
     </header>
     <slot />
   </article>
