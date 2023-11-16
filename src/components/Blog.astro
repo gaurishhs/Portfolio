@@ -1,0 +1,34 @@
+---
+import { getPosts } from "../utils/posts";
+
+const posts = await getPosts();
+---
+
+<section>
+    <h1 class="text-2xl font-semibold">
+        Blog
+    </h1>
+    <ul class="w-full mt-4">
+        {posts.map((post, i) => (
+            <a
+                class="flex w-full group justify-between text-sm text-neutral-500"
+                href={"/blog/"+post.slug}
+            >
+            <li
+                class="mb-4 w-full justify-between flex gap-2 cursor-pointer"
+            >
+                    <span class="mr-2 transition group-hover:text-neutral-400">
+                        {post.data.title}
+                    </span>
+                    <p class="transition group-hover:text-neutral-400">
+                        {post.data.date.toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                        })}
+                    </p>
+                    </li>
+                    </a>
+                    ))}
+    </ul>
+</section>

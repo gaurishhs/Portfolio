@@ -1,0 +1,21 @@
+---
+import projects from '../data/projects.json';
+---
+
+<section>
+    <h1 class="text-2xl font-semibold">
+        Projects
+    </h1>
+    <div class="grid mt-4 grid-cols-2 md:grid-cols-3 gap-4">
+        {projects.map((project) => {
+            return (
+                <div class="block space-y-2">
+                    <a class="transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400" href={project.url}>
+                        {project.title}
+                    </a>
+                    <p>{project.description}</p>
+                </div>
+            )
+        })}
+    </div>
+</section>

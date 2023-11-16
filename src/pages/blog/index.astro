@@ -1,0 +1,26 @@
+---
+import MainLayout from "../../layouts/Main.astro";
+import List, { type KV } from "../../components/List.astro";
+import { getPosts } from "../../utils/posts";
+
+const posts = await getPosts();
+
+const items: KV[] = posts.map((post) => ({
+  key: post.data.title,
+  value: new Date(post.data.date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+  }),
+ link: `/blog/${post.slug}`,
+}));
+---
+
+<MainLayout title="Blog">
+  <div class="space-y-2">
+    <List items={items} />
+  </div>
+  <div class="text-center">
+    <a class="transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400" href="/rss.xml">RSS</a>
+  </div>
+</MainLayout>

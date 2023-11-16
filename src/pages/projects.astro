@@ -1,0 +1,17 @@
+---
+import MainLayout from "../layouts/Main.astro";
+import List, { type KV } from "../components/List.astro";
+import projects from "../data/projects.json";
+
+const items: KV[] = projects.map((project) => ({
+  key: project.title,
+  value: project.description,
+  link: project.url,
+}));
+---
+
+<MainLayout title="Projects - Gaurish Sethia">
+  <div class="container space-y-5">
+    <List items={items} />
+  </div>
+</MainLayout>
