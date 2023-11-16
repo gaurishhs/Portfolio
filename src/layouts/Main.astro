@@ -31,7 +31,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="author" content="Gaurish Sethia" />
-    <meta name="theme-color" content="#171717" /> 
+    <meta name="theme-color" content="#171717" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta
       name="keywords"
@@ -59,65 +59,79 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       <Navbar />
       <slot />
     </main>
-  </body><style is:global>
+    <style is:global>
+      :root {
+        --shiki-color-text: theme("colors.neutral.300");
+        --shiki-color-background: theme("colors.white");
+        --shiki-token-constant: theme("colors.neutral.300");
+        --shiki-token-string: theme("colors.neutral.200");
+        --shiki-token-comment: theme("colors.neutral.400");
+        --shiki-token-keyword: theme("colors.neutral.400");
+        --shiki-token-parameter: theme("colors.neutral.700");
+        --shiki-token-function: theme("colors.neutral.400");
+        --shiki-token-string-expression: theme("colors.neutral.400");
+        --shiki-token-punctuation: theme("colors.neutral.400");
+        --shiki-token-link: theme("colors.neutral.700");
+      }
 
-    html {
-      @apply antialiased touch-manipulation scroll-smooth text-base;
-      text-rendering: optimizeLegibility;
-      color-scheme: dark;
-    }
+      html {
+        @apply antialiased touch-manipulation scroll-smooth text-base;
+        text-rendering: optimizeLegibility;
+        color-scheme: dark;
+      }
 
-    body {
-      font-family: system-ui, "Segoe UI", roboto, "Noto Sans", oxygen, ubuntu,
-        cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", arial,
-        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    }
+      body {
+        font-family: system-ui, "Segoe UI", roboto, "Noto Sans", oxygen, ubuntu,
+          cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", arial,
+          sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
 
-    ::selection {
-      @apply bg-neutral-600;
-    }
+      ::selection {
+        @apply bg-neutral-600;
+      }
 
-    .prose pre {
-      @apply bg-neutral-800;
-    }
+      .prose pre {
+        @apply bg-neutral-800;
+      }
 
-    .prose a {
-      @apply transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400
-    }
+      .prose a {
+        @apply transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400;
+      }
 
-    p {
-      font-feature-settings: "kern", "zero", "liga";
-    }
+      p {
+        font-feature-settings: "kern", "zero", "liga";
+      }
 
-    div[data-rehype-pretty-code-fragment] pre {
-      @apply overflow-auto;
-    }
+      div[data-rehype-pretty-code-fragment] pre {
+        @apply overflow-auto;
+      }
 
-    .prose > img {
-      @apply w-full;
-    }
+      .prose > img {
+        @apply w-full;
+      }
 
-    .prose .anchor {
-      @apply absolute invisible no-underline;
+      .prose .anchor {
+        @apply absolute invisible no-underline;
 
-      margin-left: -1em;
-      padding-right: 0.5em;
-      width: 80%;
-      max-width: 700px;
-      cursor: pointer;
-    }
+        margin-left: -1em;
+        padding-right: 0.5em;
+        width: 80%;
+        max-width: 700px;
+        cursor: pointer;
+      }
 
-    .anchor:hover {
-      @apply visible;
-    }
+      .anchor:hover {
+        @apply visible;
+      }
 
-    .prose .anchor:after {
-      @apply text-neutral-300 dark:text-neutral-700;
-      content: "#";
-    }
+      .prose .anchor:after {
+        @apply text-neutral-300 dark:text-neutral-700;
+        content: "#";
+      }
 
-    .prose *:hover > .anchor {
-      @apply visible;
-    }
-  </style>
+      .prose *:hover > .anchor {
+        @apply visible;
+      }
+    </style>
+  </body>
 </html>

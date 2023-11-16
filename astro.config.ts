@@ -18,7 +18,7 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: false,
     rehypePlugins: [[rehypePrettyCode, {
-      theme: 'dracula',
+      theme: 'css-variables',
       keepBackground: false
     }], [rehypeAutolinkHeadings, {
       properties: {
