@@ -121,7 +121,7 @@ bun run bench
 
 Here's the result:
 
-```sh
+```sh /30.43 ms/#v /72.06 µs/#v /341.95 ms/#v /108.83 ms/#v /314.35 µs/#v /2.12 s/#v 
 $ bun run bun.js
 cpu: Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz
 runtime: bun 1.0.9 (x64-linux)

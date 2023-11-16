@@ -74,6 +74,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         --shiki-token-link: theme("colors.neutral.700");
       }
 
+      span [data-highlighted-chars] {
+        @apply bg-neutral-500 font-bold shadow-md p-1 rounded-sm
+      }
+
       html {
         @apply antialiased touch-manipulation scroll-smooth text-base;
         text-rendering: optimizeLegibility;
