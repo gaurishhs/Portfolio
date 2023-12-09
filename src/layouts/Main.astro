@@ -84,6 +84,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         @apply bg-neutral-800;
       }
 
+      .link {
+        @apply transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400;
+      }
+
       .prose a {
         @apply transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400;
       }
