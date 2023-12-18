@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+        color-scheme: light;
+        @apply bg-zinc-50;
+    }
+
+    :root.dark {
+        color-scheme: dark;
+        @apply bg-zinc-900;
+    }
+
+    :root.pause-transitions * {
+        transition-duration: 0ms !important;
+    }
+}
+
+div[data-rehype-pretty-code-fragment] pre {
+    overflow: auto;
+}
+
+.prose > img {
+    @apply w-full;
+}
