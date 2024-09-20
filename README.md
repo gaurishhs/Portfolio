@@ -1,4 +1,4 @@
-[gaurishsethia.codes](https://gaurishsethia.codes)
+[gaurishhs.xyz](https://gaurishhs.xyz)
 
 My portfolio website created using Next.js and Tailwind CSS.
 

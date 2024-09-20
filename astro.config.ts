@@ -14,7 +14,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gaurishsethia.codes',
+  site: 'https://gaurishhs.xyz',
   integrations: [tailwind(), preact(), mdx(), sitemap()],
   markdown: {
     syntaxHighlight: false,
