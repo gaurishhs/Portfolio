@@ -13,7 +13,7 @@ Cloudflare Pages is a JAMStack platform for frontend developers to collaborate a
 - Open up your shiny terminals and create a Docusaurus app
   How to create: https://docusaurus.io/docs/installation#scaffold-project-website
 
-![Creating Docusaurus App](/assets/blog/docusaurus-app-created.png)
+![Creating Docusaurus App](../../assets/blog/docusaurus-app-created.png)
 
 Now, Once you've created change your directory to the project.
 
@@ -21,7 +21,7 @@ Then, Run the start command.
 
 It will open up your browser to the development website: http://localhost:3000/
 
-![Demo website](/assets/blog/docusaurus-demo.png)
+![Demo website](../../assets/blog/docusaurus-demo.png)
 
 Now, Your Docusaurus Website is ready, Let's deploy it over Cloudflare pages.
 

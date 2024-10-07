@@ -2,6 +2,12 @@
 title: My mini homelab
 date: 2023-12-18T15:36:30.017Z
 ---
+import { Image } from 'astro:assets';
+import pishot1 from "../../assets/blog/pi-shots/1.jpg"
+import pishot2 from "../../assets/blog/pi-shots/2.jpg"
+import pishot3 from "../../assets/blog/pi-shots/3.jpg"
+import homepg from "../../assets/blog/homepage.png"
+
 
 hi! i've always been a fan of computers and specifically Linux. Even though i use a mac i've been a pro-linux guy. I really like the Linux ecosystem. 
 
@@ -36,7 +42,7 @@ I further setup [Homepage](https://gethomepage.dev) and exposed it on pi subdoma
 
 I further wanted my raspberry pi to be remotely accessible. One solution was to use Wireguard but since i was behind a Carrier-Grade NAT i don't have a public IPv4 and neither did i wanted a static ip, I do have a public IPv6 but didn't wanted my devices to be restricted to support IPv6 so i went with Tailscale which is a very nice option. 
 
-![Homepage](/assets/blog/homepage.png)
+<Image src={homepg} alt="homepage" loading="lazy" />
 
 ## Case
 
@@ -51,9 +57,10 @@ I drilled the acryllic and cut the acryllic to the Raspberry Pi's shape (doesn't
 
 Here's what it looks like now:
 
-![shot 1](/assets/blog/pi-shots/1.jpg)
-![shot 2](/assets/blog/pi-shots/2.jpg)
-![shot 3](/assets/blog/pi-shots/3.jpg)
+<Image src={pishot1} alt="shot 1" loading="lazy" />
+<Image src={pishot2} alt="shot 2" loading="lazy" />
+<Image src={pishot3} alt="shot 3" loading="lazy" />
+
 
 PS: The Pen drive is used to store backups of my passwords using rclone.
 

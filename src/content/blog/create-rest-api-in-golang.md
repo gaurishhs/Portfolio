@@ -19,7 +19,7 @@ touch main.go
 go get -u github.com/gin-gonic/gin
 ```
 
-![Terminal](/assets/blog/go-project-init.png)
+![Terminal](../../assets/blog/go-project-init.png)
 
 Now, Let's Navigate to our main.go and start writing code with [vscode](https://code.visualstudio.com/)
 

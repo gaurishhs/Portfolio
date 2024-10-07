@@ -31,7 +31,7 @@ It will create a Typescript based new project, Now let's begin writing some code
 
 You'll see something like this:
 
-![Project bootstrapped](/assets/blog/bun-starter.png)
+![Project bootstrapped](../../assets/blog/bun-starter.png)
 
 Now, Let's install our dependencies:
 
@@ -197,7 +197,7 @@ new Elysia()
 
 Notice the db autocomplete in the handler :)
 
-![DB autocomplete](/assets/blog/kvb-ts.png)
+![DB autocomplete](../../assets/blog/kvb-ts.png)
 
 Create routes for creating a book
 
@@ -505,7 +505,7 @@ Head to `localhost:3000`
 
 This is what you should see:
 
-![Bookstore](/assets/blog/bun-demo-app.png)
+![Bookstore](../../assets/blog/bun-demo-app.png)
 
 How to use it?
 
