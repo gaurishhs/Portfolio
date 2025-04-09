@@ -3,10 +3,12 @@ const pathname = new URL(Astro.request.url).pathname;
 const isHome = pathname === '/';
 ---
 
-<div class="mx-auto mb-6 py-2">
+<div class="pt-10 w-full max-w-2xl">
+<div class="text-left mb-6 py-2">
     {isHome ? (
         <span class="text-neutral-400">gaurishhs</span>
     ) : (
     <a href="/" class="text-neutral-400">gaurishhs</a>
     )}
+</div>
 </div>

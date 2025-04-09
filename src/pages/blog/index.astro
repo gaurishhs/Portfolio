@@ -13,10 +13,16 @@ const items: KV[] = posts.map((post) => ({
 ---
 
 <MainLayout title="Blog">
-  <div class="space-y-2">
+  <div class="w-full space-y-2">
     <List items={items} />
   </div>
-  <div class="text-center">
-    <a class="transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400" href="/rss.xml">RSS</a>
+
+  <div class="w-full flex justify-center">
+    <a
+      class="transition-all ease-in-out underline decoration-neutral-500 decoration-[0.06em] underline-offset-4 hover:decoration-neutral-400"
+      href="/rss.xml"
+    >
+      RSS
+    </a>
   </div>
 </MainLayout>

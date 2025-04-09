@@ -3,64 +3,53 @@ import MainLayout from "../layouts/Main.astro";
 ---
 
 <MainLayout title="Gaurish Sethia">
-  <div class="text-base mt-3">
-    <p>
-      Hi, I&apos;m{" "}
-      <span class="italic font-semibold">Gaurish Sethia</span>. I am a full
-      stack developer and have been programming for over 6 years now. I have
-      worked with a variety of languages and frameworks: JS/TS, Next.js, Go and
-      Python. I am a big proponent of open source and have contributed to many
-      open source projects. I prioritize performance in my projects and have a
-      keen eye for detail.
-    </p>
-    <p class="mt-4">
-      Besides code, I&apos;ve been interested in Computer Hardware, Systems and
-      Networking.
-    </p>
+  <div class="max-w-2xl mx-auto text-neutral-100 space-y-6">
+    <div class="text-base mt-1">
+      <p>
+        Hi, I&apos;m{" "}
+        <span class="italic font-semibold">Gaurish Sethia</span>. I am a full
+        stack developer and have been programming for over 6 years now. I have
+        worked with a variety of languages and frameworks: JS/TS, Next.js, Go and
+        Python. I am a big proponent of open source and have contributed to many
+        open source projects. I prioritize performance in my projects and have a
+        keen eye for detail.
+      </p>
+      <p class="mt-4">
+        Besides code, I&apos;ve been interested in Computer Hardware, Systems and
+        Networking.
+      </p>
+    </div>
+    <div class="text-neutral-100 flex justify-between gap-12 flex-wrap">
+      <ul class="space-y-2">
+        <li>
+          <a class="hover:opacity-80" href="/blog">01. Blog</a>
+        </li>
+        <li>
+          <a class="hover:opacity-80" href="/projects">02. Projects</a>
+        </li>
+        <li>
+          <a class="hover:opacity-80" href="/pgp">03. PGP</a>
+        </li>
+      </ul>
+
+      <ul class="space-y-2 text-neutral-100">
+        <li>
+          <a class="hover:opacity-80" target="_blank" rel="noopener noreferrer" href="https://github.com/gaurishhs">
+            Github
+          </a>
+        </li>
+        <li>
+          <a class="hover:opacity-80" target="_blank" rel="noopener noreferrer" href="mailto:gaurishh.sethia@gmail.com">
+            Email
+          </a>
+        </li>
+        <li>
+          <a class="hover:opacity-80" target="_blank" rel="noopener noreferrer" href="https://twitter.com/gaurishhs">
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="text-neutral-100 justify-between">
-    <ul class="float-left space-y-2">
-      <li>
-        <a class="hover:opacity-80" href="/blog"> 01. Blog </a>
-      </li>
-      <li>
-        <a class="hover:opacity-80" href="/projects"> 02. Projects </a>
-      </li>
-      <li>
-        <a class="hover:opacity-80" href="/pgp"> 03. PGP </a>
-      </li>
-    </ul>
-    <ul class="float-right space-y-2 text-neutral-100">
-      <li>
-        <a
-          class="hover:opacity-80"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/gaurishhs"
-        >
-          Github
-        </a>
-      </li>
-      <li>
-        <a
-          class="hover:opacity-80"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:gaurishh.sethia@gmail.com"
-        >
-          Email
-        </a>
-      </li>
-      <li>
-        <a
-          class="hover:opacity-80"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/gaurishhs"
-        >
-          Twitter
-        </a>
-      </li>
-    </ul>
-  </div>
+
 </MainLayout>

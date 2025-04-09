@@ -53,10 +53,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       property="twitter:image"
       content={"https://gaurishhs.xyz" + ogImg}
     />
-    <ViewTransitions transition:animate={slide({ duration: '0.05s' })}  />
+    <ViewTransitions transition:animate={slide({ duration: '0.04s' })}  />
   </head>
   <body class="max-w-2xl antialiased mx-auto bg-neutral-900 text-neutral-300">
-    <main class="p-6 pt-2 md:pt-6 items-center min-h-screen space-y-6">
+    <main class="p-6 min-h-screen flex flex-col justify-center items-start space-y-6 translate-y-[-5vh]">
       <Navbar />
       <slot />
     </main>
