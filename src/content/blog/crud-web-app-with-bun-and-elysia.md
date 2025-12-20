@@ -1,6 +1,6 @@
 ---
-title: Create a CRUD Web App with Bun and Elysia.js
-date: 2023-03-06T07:39:52Z
+title: 'Create a CRUD Web App with Bun and Elysia.js'
+date: '2023-03-06'
 ---
 
 We will be creating a crud web application with [Bun](https://bun.sh) and [Elysia.js](https://elysiajs.com)

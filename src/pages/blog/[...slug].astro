@@ -1,22 +1,27 @@
 ---
-import BlogLayout from '../../layouts/Blog.astro';
-import { type CollectionEntry, getCollection } from "astro:content";
+import BlogLayout from "../../layouts/Blog.astro";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: post,
   }));
 }
 type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
-const slug = post.slug;
+const slug = post.id;
 const frontmatter = post.data;
-const { Content, remarkPluginFrontmatter } = await post.render();
+const { Content, remarkPluginFrontmatter } = await render(post);
 ---
 
-<BlogLayout readingTime={remarkPluginFrontmatter.minutesRead} slug={slug} title={frontmatter.title} date={frontmatter.date}>
+<BlogLayout
+  readingTime={remarkPluginFrontmatter.minutesRead}
+  slug={slug}
+  title={frontmatter.title}
+  date={frontmatter.date}
+>
   <Content />
 </BlogLayout>

@@ -1,6 +1,6 @@
 ---
-title: Deploying Docusaurus on Cloudflare Pages
-date: 2022-01-29T03:53:39Z
+title: 'Deploying Docusaurus on Cloudflare Pages'
+date: '2022-01-29'
 ---
 
 Hello there!

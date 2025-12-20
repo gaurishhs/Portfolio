@@ -1,6 +1,6 @@
 ---
-title: Benchmarking bun install and sqlite
-date: 2023-11-06T14:48:57.755Z
+title: 'Benchmarking bun install and sqlite'
+date: '2023-11-06'
 ---
 
 ## What is bun?
