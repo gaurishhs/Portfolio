@@ -6,7 +6,6 @@ import sitemap from "@astrojs/sitemap";
 import { remarkReadingTime } from "./remark-reading-time";
 import { readFileSync } from "fs";
 import mdx from "@astrojs/mdx";
-import cloudflare from "@astrojs/cloudflare";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -42,7 +41,6 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  adapter: cloudflare()
 });
 
 function rawFonts(ext: string[]) {
